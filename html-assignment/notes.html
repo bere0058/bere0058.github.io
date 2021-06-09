@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Bereche's assignment</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="justify">
     <header> 
         <h1>Notes</h1>
         <nav>
-            <ul>
+            <ul class="nonlist">
                 <li><a href="index.html" target="_blank">Homepage </a></li>
                 <li>Notes page</li>
             </ul>
@@ -22,7 +23,7 @@
         <h3>Tag Description.</h3>    
     </header> 
     <p>Here is a list of 5 learned html tags and their description:</p>    
-        <dl>
+        <dl class="dl">
             <dt><b>Emphasis</b></dt>
             <dd>&#60;em&#62; &#60;/em&#62;. Used to give slightly more important to the text.</dd>
             <dt><b>Paragraphs</b></dt>
@@ -43,7 +44,7 @@
     </section>  
     <aside>
         <h3>Hobbies</h3>
-        <dl>
+        <dl class="dl">
             <dt><b>Soccer</b></dt>
             <dd>Play and sometimes watch.</dd>
             <dt><b>Music</b></dt>
@@ -56,8 +57,8 @@
     </aside>
     <aside>
         <h3>Reviewing some animes:</h3>
-        <table>
-            <caption>Review</caption>
+        <table class="table">
+            <caption><strong>Review</strong></caption>
             <thead>
                 <tr>
                     <th>Name</th>
@@ -68,9 +69,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="https://9anime.bar/watch/my-teen-romantic-comedy-snafu.j83/ep-1" target="_blank"><strong>Oregairu</strong></a></td>
-                    <td>2013</td>
-                    <td>
+                    <td class="name"><a href="https://9anime.bar/watch/my-teen-romantic-comedy-snafu.j83/ep-1" target="_blank"><strong>Oregairu</strong></a>
+                    </td>
+                    <td class="name">2013</td>
+                    <td class="list">
                         <ul>
                         <li>Psychological</li>
                         <li>Romantic Comedy</li>
@@ -80,10 +82,10 @@
                     <td>Hachiman is my hero! Is hilarious and nostalgic the approach to high school students who have poor social skills (<i>loners</i>).</td>
                 </tr>
                 <tr>
-                    <td><a href="https://9anime.bar/watch/kaguya-sama-love-is-war.5pvv/ep-1" target="_blank"><strong>Kaguya-Sama</strong></a></td>
-                    <td>2019</td>
-                    <td
-                    ><ul>
+                    <td class="name"><a href="https://9anime.bar/watch/kaguya-sama-love-is-war.5pvv/ep-1" target="_blank"><strong>Kaguya-Sama</strong></a></td>
+                    <td class="name">2019</td>
+                    <td class="list">
+                    <ul>
                         <li>Psychological</li>
                         <li>Romantic Comedy</li>
                         <li>Slice of Life</li>
@@ -92,9 +94,9 @@
                     <td>The level of absurd comlexity in the character's approach to simple matters freakes me out! Accompained with laugh your mind will strugle in solve the problems that face both geniuses.</td>
                 </tr>
                 <tr>
-                    <td><a href="https://9anime.bar/watch/bakemonogatari.579/ep-1"><strong>Monogatari Series</strong></a></td>
-                    <td>2009</td>
-                    <td>
+                    <td class="name"><a href="https://9anime.bar/watch/bakemonogatari.579/ep-1"><strong>Monogatari Series</strong></a></td>
+                    <td class="name">2009</td>
+                    <td class="list">
                         <ul>
                         <li>Paranormal Psychological</li>
                         <li>Comedy</li>
@@ -113,7 +115,7 @@
         </header>
             <p>Here is my character vectorization of <b>Digital Graphics</b>, a image of Shinobu from Monogatari Series.</p> 
             <p><a href="https://www.deviantart.com/krukmeister/art/Monogatari-Series-Oshino-Shinobu-436382734" target="_blank"> Here</a> is the original source.</p>
-            <img src="../images/shinobu.jpg" alt="Vectorized Shinobu">
+            <img src="../images/shinobu.jpg" alt="Vectorized Shinobu" id="my-image" >
         </section>
     </aside>
     <hr/>
