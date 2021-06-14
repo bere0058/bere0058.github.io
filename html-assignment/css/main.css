@@ -55,3 +55,7 @@ a:hover{
 .table .name{
     text-align: center;
 }
+.iframe {
+    width: 560px;
+    height: 315px;
+}
