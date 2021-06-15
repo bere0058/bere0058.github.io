@@ -45,6 +45,7 @@ table {
 /*Adding background color to the body*/
 body {
 	background-color: rgba(121, 245, 229, 0.452);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /*Centering the main content and giving background color*/
 .maindiv {
@@ -53,14 +54,14 @@ body {
 	margin: auto;
 	background-color: rgba(236, 253, 252, 0.767);
 }
-/*Stilizing the HEADER*/
-/*Stilizing the title with image as a background*/
+/*Styling the HEADER*/
+/*Styling the title with image as a background*/
 .headerimage {
 	align-content: center;
 	margin: auto;
 	margin-left: 2px;
-	padding: 5%;
-	background-image: url('../images/kyoto.jpg');
+	padding: 10%;
+	background-image: url('../images/lone-starfish-wide.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: -2px 0 rgb(112, 112, 112);
@@ -72,7 +73,7 @@ body {
 	font-family: fantasy;
 	font-size: 3em;
 }
-/*Stilizing navigation*/
+/*Styling navigation*/
 .nav{
 	color: whitesmoke;
 	background-color: rgb(54, 54, 54);
@@ -97,16 +98,15 @@ body {
 	background-color: rgb(29, 29, 29);
 	cursor: pointer;
 }
-/*Stilizing the ARTICLE*/
+/*Styling the ARTICLE*/
 h2 {
 	font-family: fantasy;
 	font-size: 2em;
 	padding-top: 10px;
 	padding-left: 10px;
 }
-/*Stilizing the image and its text*/
+/*Styling the image and its text*/
 .article {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	padding: 10px;
 	text-align: justify;
 }
@@ -131,7 +131,8 @@ h3 {
 	list-style: square;
 	padding-left: 20px;
 }
-/*Stilizing the FORM*/
+/*Styling the FORM*/
+/*Styling the form frames*/
 .form {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -143,14 +144,15 @@ h3 {
 .form-content {
 	padding: 10px;
 	padding-right: 20px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.form-labels {
+/*Styling the form labels*/
+.form-labels, .form-question {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 1em;
 	font-weight: 600;
 }
+/*Styling the form fields, submit button and form question*/
 .form-fields, .form-field {
 	align-content: flex-start;
 	width: 100%;
@@ -158,4 +160,15 @@ h3 {
 .form-field {
 	height: 90px;
 	text-align: start;
+}
+.submit {
+	padding-top: 10px;
+}
+.form-question {
+	font-size: 1.2em;
+}
+/*Styling the FOOTER*/
+.footer {
+	padding: 10px;
+	text-align: right;
 }
