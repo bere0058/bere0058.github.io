@@ -17,13 +17,13 @@
                 <table class="nav-table"> 
                       <tr>
                           <th class="nav-th">Home</th>
-                          <th class="nav-thm">Story</th>
-                          <th class="nav-th">Contact</th>
+                          <th class="nav-thm"><a href="#article">story</a></th>
+                          <th class="nav-th"><a href="#form">form</a></th>
                         </tr>
                 </table>
             </nav>
         </header>
-        <article>
+        <article id="article">
             <h2>Life of a Starfish</h2>
             <div class="article">
                 <div class="article-img"></div>
@@ -38,7 +38,7 @@
                 <h3>Contact to more info</h3>
             </div>
         </article>
-        <form class="form">
+        <form id="form" class="form">
             <div class="form-border">
                 <div class="form-content">
                     <p class="form-labels">Name</p>
@@ -46,7 +46,7 @@
                     <p class="form-labels">Email</p>
                     <input class="form-fields" type="email" name="email" placeholder="Ex: your@email.com">
                     <p class="form-labels">Message</p>
-                    <input class="form-field" type="text" name="message" placeholder="Your message for us">
+                    <textarea class="form-field" type="text" name="message" placeholder="Your message for us"></textarea>
                     <h4 class="form-question">Will you visit the Starfish?</h4>
                     <label class="form-labels" for="yes">Yes</label>
                     <input type="radio" id="yes" name="visit-inclination">
@@ -61,7 +61,7 @@
             </div>
         </form>
         <footer class="footer">
-            <p>&#169;Lonely Starfish</p>
+            <p>&#169;Lone Starfish</p>
         </footer>
     </div>
 </body>
