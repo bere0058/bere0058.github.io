@@ -125,12 +125,10 @@ h2 {
 	text-align: justify;
 	line-height: 1.2rem;
 }
-.article-img {
-	float: left;
-	margin-right: 5px;
-}
 #article-image {
 	width: 260px;
+	float: left;
+	margin-right: 5px;
 }
 h3 {
 	font-family: fantasy;
