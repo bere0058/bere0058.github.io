@@ -168,7 +168,7 @@ h3 {
 	display: block;
 }
 /*Styling the form fields*/
-.form-fields, .form-field {
+#form-field {
 	align-content: flex-start;
 	width: 100%;
 	border: solid 1px rgb(182, 182, 182);
@@ -189,7 +189,7 @@ h3 {
 	font-weight: 600;
 	display: inline-block;
 }
-.form-field {
+#form-field {
 	height: 90px;
 	text-align: start;
 	box-shadow: 0 -0.5px rgb(131, 131, 131);
