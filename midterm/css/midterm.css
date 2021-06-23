@@ -60,7 +60,7 @@ body {
 }
 /*Styling the HEADER*/
 /*Styling the title with image as a background*/
-.headerimage {
+.headerimage-box {
 	margin-left: 2px; 
 	box-shadow: -2px 0 rgb(112, 112, 112);
 	position: relative;
@@ -70,7 +70,7 @@ body {
 	height: 100%;
 	top: 100%;
 }
-.h1 {
+.main-title {
 	text-align: center;
 	color: rgb(255, 255, 255);
 	font-family: fantasy;
@@ -81,46 +81,45 @@ body {
 	z-index: 1;
 }
 /*Styling navigation*/
-.nav{
+.nav-box {
 	height: 40px;
+	max-width: 100%;
 	display: inline;
 }
-.list {
-	height: 100%;
-}
-.nav > ul > li {
+.nav-box > ul > li {
 		background: rgb(54, 54, 54);
+		margin-right: -3.7px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		text-align: center;
 		vertical-align: middle;
 		text-transform: uppercase;
-		width: 33%;
+		width: 33.25%;
 		font-size: 1.5em;
 		color: whitesmoke;
 		display: inline-block;
 	}
-.list-middlebox {
+.navlist-middlebox {
 	border-right: solid 1px whitesmoke;
 	border-left: solid 1px whitesmoke;
 }
-.list:hover {
+.nav-list:hover {
 	background-color: rgb(29, 29, 29);
 	cursor: pointer;
 }
-.list > li:hover {
+.nav-list > li:hover {
 	background: none;
 }
 /*Styling the ARTICLE*/
 h2 {
 	font-family: fantasy;
 	font-size: 2em;
-	padding-top: 20px;
-	padding-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	padding-left: 10px;
 }
 /*Styling the image and its text*/
-.article {
+.article-box {
 	padding: 10px;
 	text-align: justify;
 	line-height: 1.2rem;
@@ -145,7 +144,10 @@ h3 {
 }
 /*Styling the FORM*/
 /*Styling the form frames*/
-.form {
+.form-title {
+	padding-left: 10px;
+}
+.form-box {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: auto;
@@ -166,7 +168,7 @@ h3 {
 	display: block;
 }
 /*Styling the form fields*/
-#form-field {
+.form-field {
 	align-content: flex-start;
 	width: 100%;
 	border: solid 1px rgb(182, 182, 182);
@@ -187,17 +189,17 @@ h3 {
 	font-weight: 600;
 	display: inline-block;
 }
-#form-field {
+.form-field {
 	height: 90px;
 	text-align: start;
 	box-shadow: 0 -0.5px rgb(131, 131, 131);
 	resize: none;
 }
 /*Styling the submit button*/
-.submit {
+.submit-box {
 	padding-top: 10px;
 }
-#submit {
+#submit-button {
 	background-color: rgba(6, 72, 88, 0.568);
 	color: seashell;
 	box-shadow: silver -1px -2px;
@@ -208,7 +210,7 @@ h3 {
 	cursor: pointer;
 }
 /*Styling the FOOTER*/
-.footer {
+.site-footer {
 	padding: 20px;
 	text-align: right;
 }
