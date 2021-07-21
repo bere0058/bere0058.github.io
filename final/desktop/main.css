@@ -43,7 +43,11 @@ h2 {
     font-weight: bold;
 }
 h3 {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 11px;
     font-weight: bold;
 }
 p {
@@ -133,20 +137,17 @@ p {
 	color:  #C68D00;
 }
 /*Styliizing welcome div and box*/
-.welcome {
-    background-repeat: no-repeat;
-}
-.welcome .bgwelcome {
+.bgwelcome {
     padding: 4% 0;
 }
-.welcome .bgwelcome .welcomebox {
+.bgwelcome .welcomebox {
     background-color: rgba(0, 0, 0, 0.67);
     padding-top: 8%;
     padding-bottom: 4%;
     color: white;
 }
 /*Stylizing button*/
-.welcome .bgwelcome .welcomebox .button {
+.bgwelcome .welcomebox .button {
     background-color: #C68D00;
     color: black;
     width: 30%;
@@ -155,12 +156,12 @@ p {
     align-items: center;
     justify-content: center;
 } 
-.welcome .bgwelcome .welcomebox .button:hover {
+ .bgwelcome .welcomebox .button:hover {
     background-color: #aa7b03;
     cursor: pointer;
 }
 /*Stylizing play button*/
-.welcome .bgwelcome .welcomebox .play-button {
+.bgwelcome .welcomebox .play-button {
     margin: 0 0 0 10px;
     top: 25%;
     width: 0;
@@ -190,20 +191,20 @@ p {
     width: 100%;
 }
 /*Stylizing services*/
-.services {
-    width: 100%;
-    align-items: center;
+.services, .team, .contact, .hours {
     flex-wrap: wrap;
 }
-.services .bgservices{
-    flex-direction: row;
-    padding-bottom: 2%;
-    flex-wrap: wrap;
-}
-/*Stylizing services box*/
 .services .title .titlebox {
     padding-top: 5%;
     width: 100%;
+}
+/*Stylizing services box*/
+.services .bgservices{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services .title .titlebox > h2 {
+    padding-bottom: 1.5%;
 }
 .services .bgservices .text > h3 {
     padding: 6% 0 2% 0;
@@ -233,8 +234,8 @@ p {
     width: 100%;
 }
 .services .bgservices .servicebox .text {
-    width: 98.5%;
-    padding-bottom: 2%;
+    width: clac (98.5% - 20px);
+    padding: 0 10px 2% 10px;
     background-color: #FFE6AC;
 }
 /*Stylizing services box button*/
@@ -265,5 +266,168 @@ p {
 .services .bgservices .group2 {
     width: 31.83%;
 }
-
-
+/*Stylizing Our Vision*/
+.vision {
+    background-image: url(/final/images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-bottom: 1%;
+}
+.vision .bgvision {
+    flex-direction: column;
+}
+.vision .bgvision .particlebox > h3 {
+    padding: 3.5% 0 1% 0;
+}
+.vision .bgvision .particlebox > p {
+    padding: 1% 0;
+}
+.vision .bgvision .button {
+    background-color: rgb(28, 28, 49);
+    color: white;
+    width: 20%;
+    height: 60px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.vision .bgvision .button:hover {
+    background-color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.vision .bgvision .play-button {
+    margin: 0 0 0 10px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 9px;
+    border-color: transparent transparent transparent white;
+}
+/*Stylizing Our Team*/
+.team .title .titlebox {
+    padding: 5% 0 2% 0;
+}
+.team .box {
+    flex-wrap: wrap;
+}
+/*Stylizing Our Team content*/
+.team .box .text {
+    width: 46%;
+    padding: 2%;
+    background-color: #FFE6AC;
+}
+.team .box .text > h4 {
+    border-bottom: 1.5px solid #C68D00;
+}
+.team .box .text > p {
+    padding-top: 3%;
+}
+.team .box .image {
+    width: 50%;
+    display: inherit;
+}
+/*Stylizing Our Team images*/
+#john {
+    width: 100%;
+}
+#bob {
+    width: 100%;
+}
+/*Stylizing Contact Us*/
+/*Stylizing Contac Us tittle*/
+.contact .title .titlebox {
+    padding: 5% 0 2% 0;
+    width: 100%;
+}
+/*Stylizing Contact Us content*/
+.contact .middlebox .send {
+    width: 50%;
+}
+/*Stylizing Contact Us form*/
+.contact .middlebox .send > form > label {
+    display: block;
+}
+.contact .middlebox .send > form > input, .contact .middlebox .send > form > textarea {
+    width: 94%;
+    border: solid 1px black;
+}
+.contact .middlebox .send > form > textarea {
+    height: 120px;
+    overflow: hidden;
+    resize: none;
+}
+.contact .middlebox .send > form > input:last-child {
+    width: 15%;
+    color: #aa7b03;
+    background-color: #222222;
+}
+.contact .middlebox .send > form > input:last-child:hover {
+    background-color: black;
+}
+/*Stylizing Contac Us map*/
+.contact .middlebox .location {
+    width: 50%;
+}
+.contact .middlebox .location .map {
+    padding-bottom:100%;
+    position:relative;
+}
+.contact .middlebox .location .map > iframe {
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*Stylizing Hours of Operation*/
+.hours .title .titlebox {
+    padding: 5% 0 2% 0;
+    width: 100%;
+}
+/*Stylizing Hours of Operation grid*/
+.hours {
+    padding-bottom: 1.5%;
+}
+.hours .middlebox .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+}
+.hours .middlebox .grid .box {
+    display: inherit;
+    align-content: center;
+    border: solid black 1px;
+    padding: 2%;
+    font-size: 10px;
+}
+.hours .middlebox .grid .box:nth-child(1), .hours .middlebox .grid .box:nth-child(2) {
+    justify-items: center;
+    background-color: #FFE6AC;
+}
+.hours .middlebox .grid .box:nth-child(2n-1) {
+    grid-column: span 5;
+}
+.hours .middlebox .grid .box:nth-child(2n) {
+    grid-column: span 3;
+ }
+ /*Stylizing Footer*/
+footer {
+     background-color: #222222;
+     color: #C68D00;
+     display: inherit;
+     flex-wrap: wrap;
+     flex-direction: column;
+     padding: 1% 0 0.5% 0;
+}
+footer .bigbox .middlebox {
+    display: flex;
+    flex-direction: column;
+} 
+footer .bigbox .middlebox > p {
+    padding: 1% 0 0 0;
+}
+footer .bigbox .middlebox > p > a {
+    text-decoration: underline;
+}
