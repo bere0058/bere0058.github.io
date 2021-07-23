@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+/*Stylizing body*/
+body {
+	width: 360px;
+}
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1%
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+p {
+	font-size: 0.5em;
+	line-height: 1.5em;
+	padding: 2% 0;
+}
+.button {
+	display: flex;
+	font-size: 0.75em;
+	padding: 5% 2%;
+	width: 35%;
+    height: 25%;
+	align-items: center;
+    justify-content: center;
+}
+.button:hover {
+	cursor: pointer;
+}
+.button .play-button {
+	margin: 0 0 0 10px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #000;
+    opacity: .75; 
+}
+.title {
+	padding: 3% 0 2% 0;
+}
+/*Stylizing menu*/
+.menu {
+	grid-template-rows: repeat(8, 1fr);
+}
+.menu .bgmenu {
+	border: 5px solid #222222;
+}
+.menu .bgmenu .box {
+	width: auto;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	padding: 2%;
+	color: #C68D00;
+	background-color: #222222;
+	border-collapse: collapse;
+}
+.menu .bgmenu .box:hover {
+	background-color: black;
+}
+.menu .bgmenu .box:nth-child(1) {
+	grid-row: span 2;
+	justify-content: start;
+	padding: 2% 4% 0 0;
+}
+#logo {
+	width: 50%;
+}
+.menu .bgmenu .box:nth-child(2) {
+	color: black;
+}
+.menu .bgmenu .box:nth-child(2):hover {
+	background-color: #ffe6ac;
+}
+.menu .bgmenu .box:nth-child(1), .menu .box:nth-child(2) {
+	background-color: #C68D00;
+}
+/*Stylizing the search box*/
+.menu .bgmenu .box:nth-last-child(1) {
+	background-color: #222222;
+	border-top: 0;
+	justify-content: start;
+	display: flex;
+	padding: 0 2% 0 2%;
+}
+.menu .bgmenu .box > input {
+	border: 0;
+	padding: 0;
+	font-size: inherit;
+	outline: none;
+	width: 95%;
+}
+.menu .bgmenu .box > button {
+  width: 5%;
+  background: #222222;
+  font-size: 14.7px;
+  padding: 0;
+  border: 0.5px solid #C68D00;
+  cursor: pointer;
+}
+.menu .bgmenu .box > button > i {
+	color:  #C68D00;
+}
+/*Styliizing home*/
+.home {
+    width: 100%;
+	background-image: url(images/main-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-content: center;
+}
+.home .bghome {
+	padding: 9% 0;
+}
+.home .bghome .homebox {
+	padding: 6% 10% 2% 2%;
+	background-color: rgba(0, 0, 0, 0.67);
+	color: white;
+}
+/*Stylizing button*/
+.home .bghome .homebox .button {
+    background-color: #C68D00;
+    color: black;
+} 
+.home .bghome .homebox .button:hover {
+    background-color: #aa7b03;
+}
+/*Stylizing About Us*/
+.about { 
+    background-color: #FFE6AC;
+}
+.bgabout {
+    padding: 2%;
+    width: 96%;
+    height: 96%;
+}
+.about .bgabout .image {
+    width: 100%;
+    height: 60%;
+}
+.about .bgabout .text {
+    width: 100%;
+    height: 40%;
+}
+#aboutimg {
+    width: 100%;
+}
+/*Stylizing Our Services*/
+.services {
+	padding: 3% 1.5%;
+}
+.services .service {
+	padding: 1% 2%;
+}
+.services .service:nth-child(1) {
+	padding-top: 3.5%;
+}
+.services .service .image {
+	display: flex;
+}
+.services .service .text {
+	width: 96%;
+    background-color: #FFE6AC;
+    padding: inherit;
+}
+/*Stylizing button*/
+.services .service .text .button {
+	background-color: black;
+    color: white;
+} 
+.services .service .text .button:hover {
+	background-color: rgb(56, 56, 56);
+}
+/*Stylizing play button*/
+.services .service .text .button .play-button {
+	border-color: transparent transparent transparent white;
+}
+/*Stylizing Marketing*/
+#digitalimg { 
+	width: 100%;
+}
+#marketingimg { 
+    width: 100%;
+}	
+#videoimg {
+	width: 100%;
+}
+#webimg {
+	width: 100%;
+}
+#printimg {
+	width: 100%;
+}
