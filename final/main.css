@@ -35,6 +35,16 @@ h2 {
 	font-size: 1.5em;
 	font-weight: bold;
 }
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 0.6%;
+}
+h4 {
+	font-size: 0.55em;
+	font-weight: bold;
+	border-bottom: #C68D00 solid;
+}
 p {
 	font-size: 0.5em;
 	line-height: 1.5em;
@@ -130,7 +140,6 @@ p {
 }
 /*Styliizing home*/
 .home {
-    width: 100%;
 	background-image: url(images/main-banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -175,7 +184,7 @@ p {
 }
 /*Stylizing Our Services*/
 .services {
-	padding: 3% 1.5%;
+	padding: 3% 0;
 }
 .services .service {
 	padding: 1% 2%;
@@ -187,14 +196,15 @@ p {
 	display: flex;
 }
 .services .service .text {
-	width: 96%;
     background-color: #FFE6AC;
     padding: inherit;
 }
 /*Stylizing button*/
 .services .service .text .button {
-	background-color: black;
+	background-color: #222222;
     color: white;
+	padding: 5% 5%;
+	width: max-content;
 } 
 .services .service .text .button:hover {
 	background-color: rgb(56, 56, 56);
@@ -218,4 +228,131 @@ p {
 }
 #printimg {
 	width: 100%;
+}
+/*Stylizing Vision*/
+.vision {
+    background-image: url(/final/images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 5% 2.5% 2% 2.5%;
+}
+.vision .bgvision {
+    flex-direction: column;
+}
+.vision .bgvision .particlebox > h3 {
+	padding: 0 0 0.2% 0;
+}
+.vision .bgvision .button {
+    background-color: rgb(28, 28, 49);
+    color: white;
+    height: 0;
+	width: 28%;
+	padding: 7% 0;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.vision .bgvision .button:hover {
+    background-color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.vision .bgvision .play-button {
+    margin: 0 0 0 10px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 9px;
+    border-color: transparent transparent transparent white;
+}
+/*Stylizing Our Team*/	
+#john {
+	width: 100%;
+}
+#bob {
+	width: 100%;
+}
+/*Stylizing Contact Us content*/
+/*Stylizing Contact Us form*/
+.services .service > form > label {
+    display: block;
+}
+.services .service > form > input, .services .service > form > textarea {
+    width: 100%;
+    border: solid 1px black;
+}
+.services .service > form > textarea {
+    height: 90px;
+    overflow: hidden;
+    resize: none;
+}
+.services .service > form > input:last-child {
+    width: 15%;
+    color: #aa7b03;
+    background-color: #222222;
+}
+.services .service > form > input:last-child:hover {
+    background-color: black;
+	cursor: pointer;
+}
+.services .service .hours {
+    padding-bottom: 1.5%;
+}
+.services .service .hours .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+}
+.services .service .hours .middlebox .grid .box {
+    display: inherit;
+    align-content: center;
+    border: solid black 1px;
+    padding: 4%;
+    font-size: 10px;
+}
+.services .service .hours .middlebox .grid .box:nth-child(1), .services .service .hours .middlebox .grid .box:nth-child(2) {
+    justify-items: center;
+    background-color: #FFE6AC;
+}
+.services .service .hours .middlebox .grid .box:nth-child(2n-1) {
+    grid-column: span 5;
+}
+.services .service .hours .middlebox .grid .box:nth-child(2n) {
+    grid-column: span 3;
+ }
+ /*Stylizing Contac Us map*/
+.services .service .location {
+    width: 100%;
+}
+.services .service .location .map {
+    padding: 1% 0 100% 0;
+    position:relative;
+}
+.services .service .location .map > iframe {
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*Stylizing the Footer*/
+footer {
+	background-color: #222222;
+	color: #C68D00;
+	display: inherit;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 2% 0 0.5% 0;
+}
+footer .foot {
+   display: flex;
+   flex-direction: column;
+   padding: 1.5% 2%;
+} 
+footer .foot > p {
+   padding: 1% 0 0 0;
+}
+footer .foot > p > a {
+   text-decoration: underline;
 }

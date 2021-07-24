@@ -14,11 +14,11 @@
             <div class="box">
                 <img id="logo" src="images/logo.png" alt="logo">
             </div> 
-            <div class="box"><a href="home.html">Home</a></div>
-            <div class="box"><a href="about.html">About Us</a></div>
-            <div class="box"><a href="services.html">Services</a></div>
-            <div class="box">Team</div>
-            <div class="box">Contact</div>
+            <div class="box"><a href="#home">Home</a></div>
+            <div class="box"><a href="#about">About Us</a></div>
+            <div class="box"><a href="#services">Services</a></div>
+            <div class="box"><a href="#team">Team</a></div>
+            <div class="box"><a href="#contact">Contact</a></div>
             <div class="box">
                     <input type="text" placeholder="Search">
                     <button type="submit"><i class="fa fa-search"></i></button>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
         <div class="bgabout">
             <div class="image"><img id="aboutimg" src="images/about-us.jpg" alt="About"></div>
             <div class="text">
@@ -47,9 +47,9 @@
             </div>
         </div>   
     </div>
-    <div class="services">
-        <div class="service"><h2>Our Services</h2></div>
-        <div class="service">
+    <div id="services" class="services">
+       <div class="service"><h2>Our Services</h2></div>
+       <div class="service">
             <div class="image"><img id="digitalimg" src="images/digital.jpg" alt="digital"></div>
             <div class="text">
                 <h3>Digital Transformation</h3>
@@ -66,7 +66,7 @@
            <h3>Marketing</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
            <div class="button">
-               <a href="digital-plans.html">Marketing</a> 
+               <a href="digital-plans.html">Marketing Plans</a> 
                <div class="play-button"></div>
            </div>   
        </div>
@@ -77,7 +77,7 @@
            <h3>Video Production</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
            <div class="button">
-               <a href="video.html">Marketing</a> 
+               <a href="video.html">Video Plans</a> 
                <div class="play-button"></div>
            </div>   
        </div>
@@ -88,7 +88,7 @@
            <h3>Web Development</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
            <div class="button">
-               <a href="video.html">Marketing</a> 
+               <a href="video.html">Web Plans</a> 
                <div class="play-button"></div>
            </div>   
        </div>
@@ -106,10 +106,77 @@
        </div>
     </div>
     <div class="vision">
-
+        <div class="bgvision">
+            <div class="particlebox">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet.</p>
+                <div class="button">
+                    <a href="marketing-plans.html">Learn More</a> 
+                    <div class="play-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <div id="team" class="service"><h2>Our Team</h2></div>
+        <div class="service">
+            <div class="image"><img id="john" src="images/john.jpg" alt="john"></div>
+            <div class="text">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
+            </div>
+       
+        </div>
+        <div class="service">
+            <div class="image"><img id="bob" src="images/bob.jpg" alt="john"></div>
+            <div class="text">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
+            </div>
+       
+        </div>
+        <div id="contact" class="service"><h2>Contact Us</h2></div>
+        <div class="service">
+            <h3>Send us a message</h3>
+            <form action="submit">
+                <label for="form-name">Name</label>
+                <input id="form-name" type="text" name="name" placeholder="Ex: Your Name">
+                <label for="form-email">Email</label>
+                <input id="form-email" type="email" name="email" placeholder="Ex: your@email.com">
+                <label for="form-field">Message</label>
+                <textarea id="form-field" class="form-field" name="message" placeholder="Your message for us"></textarea>
+                <input id="button" type="submit" value="Send">
+            </form>
+            <div class="hours">
+                <div class="title"><h3>Hours of operation</h3></div>
+                <div class="middlebox">
+                    <div class="grid">
+                        <div class="box">Days</div>
+                        <div class="box">Hours</div>
+                        <div class="box">Monday-Friday</div>
+                        <div class="box">9 AM - 6 AM</div>
+                        <div class="box">Saturday-Sunday</div>
+                        <div class="box">Closed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <div class="title"><h3>Location</h3></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676053!2d-75.75712548444633!3d45.3499277790998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sColl%C3%A8ge%20algonquin!5e0!3m2!1sfr!2sca!4v1626820587057!5m2!1sfr!2sca" allowfullscreen="yes" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <footer>
-
+    <div>
+        <div class="foot">
+            <p>&#169;Copyright Three Star Media</p>
+            <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+    </div>
 </footer>
 </html>
