@@ -28,7 +28,7 @@ body {
     width: 760px;
     display: flex;
     flex-direction: column;
-    background-image: url(/final-project/images/main-banner.jpg);
+    background-image: url(/final-proect/images/main-banner.jpg);
     background-size: 760px;
     background-repeat: no-repeat;
 }
