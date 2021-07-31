@@ -28,7 +28,7 @@ body {
     width: 760px;
     display: flex;
     flex-direction: column;
-    background-image: url(/final/images/main-banner.jpg);
+    background-image: url(/final-project/images/main-banner.jpg);
     background-size: 760px;
     background-repeat: no-repeat;
 }
@@ -268,7 +268,7 @@ p {
 }
 /*Stylizing Our Vision*/
 .vision {
-    background-image: url(/final/images/vision.jpg);
+    background-image: url(/final-project/images/vision.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
