@@ -140,7 +140,7 @@ p {
 }
 /*Styliizing home*/
 .home {
-	background-image: url(images/main-banner.jpg);
+	background-image: url(/final-project/images/main-banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -184,7 +184,7 @@ p {
 }
 /*Stylizing Our Services*/
 .services {
-	padding: 3% 0;
+	padding: 1% 0 2%;
 }
 .services .service {
 	padding: 1% 2%;
@@ -231,7 +231,7 @@ p {
 }
 /*Stylizing Vision*/
 .vision {
-    background-image: url(/final/images/vision.jpg);
+    background-image: url(/final-project/images/vision.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
