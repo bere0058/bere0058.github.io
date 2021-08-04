@@ -24,7 +24,7 @@ a {
 }
 /*Stylizing body and text*/
 body {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     width: 760px;
     display: flex;
     flex-direction: column;
@@ -61,6 +61,7 @@ p {
 }
 .middlebox {
     width: 84%;
+    max-width: 1200px;
     display: inherit;
 }
 .particlebox {
