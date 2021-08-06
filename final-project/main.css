@@ -111,6 +111,9 @@ p {
 #logo {
 	width: 50%;
 }
+#logo2 {
+	width: 50%;
+}
 .mbody .menu .bgmenu .box:nth-child(2) {
 	color: black;
 	background-color: #C68D00;
@@ -195,6 +198,9 @@ p {
 #aboutimg {
     width: 100%;
 }
+#aboutimg2 {
+    width: 100%;
+}
 /*Stylizing Our Services*/
 .mbody .services {
 	padding: 1% 0 2%;
@@ -235,6 +241,21 @@ p {
 #printimg {
 	width: 100%;
 }
+#digitalimg2 { 
+	width: 100%;
+}
+#marketingimg2 { 
+    width: 100%;
+}	
+#videoimg2 {
+	width: 100%;
+}
+#webimg2 {
+	width: 100%;
+}
+#printimg2 {
+	width: 100%;
+}
 /*Stylizing Vision*/
 .mbody .vision {
     background-image: url(/final-project/images/vision.jpg);
@@ -260,6 +281,12 @@ p {
 	width: 100%;
 }
 #bob {
+	width: 100%;
+}
+#john2 {
+	width: 100%;
+}
+#bob2 {
 	width: 100%;
 }
 /*Stylizing Contact Us content*/
