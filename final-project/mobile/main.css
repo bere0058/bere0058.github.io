@@ -23,31 +23,33 @@ a {
 	color: inherit;
 }
 /*Stylizing Body*/
-.mbody {
-	max-width: 759px;
+body {
 	font-family: "Open Sans", sans-serif;
 }
+.mbody {
+	min-width: 210px;
+}
 /*Stylizing H titles and Paragraph*/
-.mbody > h1 {
+h1 {
 	font-size: 2em;
 	font-weight: bold;
 	padding: 1%
 }
-.mbody > h2 {
+h2 {
 	font-size: 1.5em;
 	font-weight: bold;
 }
-.mbody > h3 {
+h3 {
 	font-size: 1.1em;
 	font-weight: bold;
 	padding-bottom: 0.6%;
 }
-.mbody > h4 {
+h4 {
 	font-size: 0.55em;
 	font-weight: bold;
 	border-bottom: #C68D00 solid;
 }
-.mbody > p {
+p {
 	font-size: 0.5em;
 	line-height: 1.5em;
 	padding: 2% 0;
@@ -85,7 +87,8 @@ a {
 	grid-template-rows: repeat(8, 1fr);
 }
 .mbody .menu .bgmenu {
-	border: 5px solid #222222;
+	border: 10px solid #222222;
+	margin: -1px;
 }
 .mbody .menu .bgmenu .box {
 	width: auto;
@@ -110,6 +113,7 @@ a {
 }
 .mbody .menu .bgmenu .box:nth-child(2) {
 	color: black;
+	background-color: #C68D00;
 }
 .mbody .menu .bgmenu .box:nth-child(2):hover {
 	background-color: #ffe6ac;
@@ -124,6 +128,7 @@ a {
 	justify-content: start;
 	display: flex;
 	padding: 0 2% 0 2%;
+	margin-bottom: -1px;
 }
 .mbody .menu .bgmenu .box > input {
 	border: 0;
@@ -340,46 +345,50 @@ a {
 }
 
 /*Stylizing Desktop*/
-@media screen and (max-width: 740px){
-	.dbody {
+@media screen and (min-width: 759px){
+	.mbody {
 		display: none;
 	}
   }
+@media screen and (max-width: 760px){
+	.dbody {
+		display: none;
+	}
+}  
 /*Stylizing body and text*/
 .dbody {
     font-family: "Open Sans", sans-serif;
     min-width: 760px;
-    display: flex;
     flex-direction: column;
     background-image: url(/final-project/images/main-banner.jpg);
     background-size: 760px;
     background-repeat: no-repeat;
 }
-.dbody > h1 {
+h1 {
     font-size: 46px;
     color: white;
     font-weight: bold;
     line-height: 69px;
 }
-.dbody > h2 {
+h2 {
     font-size: 30px;
     font-weight: bold;
 }
-.dbody > h3 {
+h3 {
     font-size: 20px;
     font-weight: bold;
 }
-.dbody > h4 {
+h4 {
     font-size: 11px;
     font-weight: bold;
 }
-.dbody > p {
+p {
     font-size: 9px;
     padding: 1% 0 2% 0;
     line-height: 14px; 
 }
 .dbody .bigbox {
-    display: inherit;
+    display: flex;
     justify-content: center;
 }
 .dbody .middlebox {
@@ -399,9 +408,6 @@ a {
     max-width: 1200px;
     grid-template-columns: repeat(8, 1fr);
     padding: 2% 10%;
-}
-#logo {
-    height: 50px;
 }
 /*Stylizing menu boxes*/
 .dbody .menu .bgmenu .box {
@@ -511,9 +517,6 @@ a {
     padding: 0 2.5% 0 1.5%;
     width: 50%;
 }
-#aboutimg {
-    width: 100%;
-}
 /*Stylizing services*/
 .dbody .services, .team, .contact, .hours {
     flex-wrap: wrap;
@@ -540,22 +543,6 @@ a {
 }
 .dbody .services .bgservices .servicebox .image {
     display: flex;
-}
-/*Stylizing images size*/
-#digital { 
-    width: 100%;
-}
-#marketing {
-    width: 100%;
-}
-#video {
-    width: 100%;
-}
-#web {
-    width: 100%;
-}
-#print {
-    width: 100%;
 }
 .dbody .services .bgservices .servicebox .text {
     width: clac (98.5% - 20px);
@@ -653,13 +640,6 @@ a {
 .dbody .team .box .image {
     width: 50%;
     display: inherit;
-}
-/*Stylizing Our Team images*/
-#john {
-    width: 100%;
-}
-#bob {
-    width: 100%;
 }
 /*Stylizing Contact Us*/
 /*Stylizing Contac Us tittle*/
