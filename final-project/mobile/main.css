@@ -23,37 +23,37 @@ a {
 	color: inherit;
 }
 /*Stylizing Body*/
-body {
-	width: 360px;
+.mbody {
+	max-width: 759px;
 	font-family: "Open Sans", sans-serif;
 }
 /*Stylizing H titles and Paragraph*/
-h1 {
+.mbody > h1 {
 	font-size: 2em;
 	font-weight: bold;
 	padding: 1%
 }
-h2 {
+.mbody > h2 {
 	font-size: 1.5em;
 	font-weight: bold;
 }
-h3 {
+.mbody > h3 {
 	font-size: 1.1em;
 	font-weight: bold;
 	padding-bottom: 0.6%;
 }
-h4 {
+.mbody > h4 {
 	font-size: 0.55em;
 	font-weight: bold;
 	border-bottom: #C68D00 solid;
 }
-p {
+.mbody > p {
 	font-size: 0.5em;
 	line-height: 1.5em;
 	padding: 2% 0;
 }
 /*Stylizing Buttons*/
-.button {
+.mbody .button {
 	display: flex;
 	font-size: 0.75em;
 	padding: 5% 2%;
@@ -62,11 +62,11 @@ p {
     justify-content: center;
 	color: white;
 }
-.button:hover {
+.mbody .button:hover {
 	cursor: pointer;
 	background-color: black;
 }
-.button .play-button {
+.mbody .button .play-button {
 	margin: 0 0 0 10px;
     top: 25%;
     width: 0;
@@ -77,17 +77,17 @@ p {
 	border-color: transparent transparent transparent white;
 }
 /*Stylizing Title boxes*/
-.title {
+.mbody .title {
 	padding: 3% 0 2% 0;
 }
 /*Stylizing Menu*/
-.menu {
+.mbody .menu {
 	grid-template-rows: repeat(8, 1fr);
 }
-.menu .bgmenu {
+.mbody .menu .bgmenu {
 	border: 5px solid #222222;
 }
-.menu .bgmenu .box {
+.mbody .menu .bgmenu .box {
 	width: auto;
 	justify-content: center;
 	align-items: center;
@@ -97,10 +97,10 @@ p {
 	background-color: #222222;
 	border-collapse: collapse;
 }
-.menu .bgmenu .box:hover {
+.mbody .menu .bgmenu .box:hover {
 	background-color: black;
 }
-.menu .bgmenu .box:nth-child(1) {
+.mbody .menu .bgmenu .box:nth-child(1) {
 	grid-row: span 2;
 	justify-content: start;
 	padding: 2% 4% 0 0;
@@ -108,31 +108,31 @@ p {
 #logo {
 	width: 50%;
 }
-.menu .bgmenu .box:nth-child(2) {
+.mbody .menu .bgmenu .box:nth-child(2) {
 	color: black;
 }
-.menu .bgmenu .box:nth-child(2):hover {
+.mbody .menu .bgmenu .box:nth-child(2):hover {
 	background-color: #ffe6ac;
 }
-.menu .bgmenu .box:nth-child(1), .menu .box:nth-child(2) {
+.mbody .menu .bgmenu .box:nth-child(1), .menu .box:nth-child(2) {
 	background-color: #C68D00;
 }
 /*Stylizing the Search Box*/
-.menu .bgmenu .box:nth-last-child(1) {
+.mbody .menu .bgmenu .box:nth-last-child(1) {
 	background-color: #222222;
 	border-top: 0;
 	justify-content: start;
 	display: flex;
 	padding: 0 2% 0 2%;
 }
-.menu .bgmenu .box > input {
+.mbody .menu .bgmenu .box > input {
 	border: 0;
 	padding: 0;
 	font-size: inherit;
 	outline: none;
 	width: 95%;
 }
-.menu .bgmenu .box > button {
+.mbody .menu .bgmenu .box > button {
   width: 5%;
   background: #222222;
   font-size: 14.7px;
@@ -140,50 +140,50 @@ p {
   border: 0.5px solid #C68D00;
   cursor: pointer;
 }
-.menu .bgmenu .box > button > i {
+.mbody .menu .bgmenu .box > button > i {
 	color:  #C68D00;
 }
 /*Styliizing Home*/
-.home {
+.mbody .home {
 	background-image: url(/final-project/images/main-banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 	align-content: center;
 }
-.home .bghome {
+.mbody .home .bghome {
 	padding: 9% 0;
 }
-.home .bghome .homebox {
+.mbody .home .bghome .homebox {
 	padding: 6% 10% 2% 2%;
 	background-color: rgba(0, 0, 0, 0.67);
 	color: white;
 }
 /*Stylizing Home button*/
-.home .bghome .homebox .button {
+.mbody .home .bghome .homebox .button {
     background-color: #C68D00;
     color: black;
 } 
-.home .bghome .homebox .button .play-button {
+.mbody .home .bghome .homebox .button .play-button {
 	border-color: transparent transparent transparent #000;
 }
-.home .bghome .homebox .button:hover {
+.mbody .home .bghome .homebox .button:hover {
     background-color: #aa7b03;
 }
 /*Stylizing About Us*/
-.about { 
+.mbody .about { 
     background-color: #FFE6AC;
 }
-.bgabout {
+.mbody .bgabout {
     padding: 2%;
     width: 96%;
     height: 96%;
 }
-.about .bgabout .image {
+.mbody .about .bgabout .image {
     width: 100%;
     height: 60%;
 }
-.about .bgabout .text {
+.mbody .about .bgabout .text {
     width: 100%;
     height: 40%;
 }
@@ -191,24 +191,24 @@ p {
     width: 100%;
 }
 /*Stylizing Our Services*/
-.services {
+.mbody .services {
 	padding: 1% 0 2%;
 }
-.services .service {
+.mbody .services .service {
 	padding: 1% 2%;
 }
-.services .service:nth-child(1) {
+.mbody .services .service:nth-child(1) {
 	padding-top: 3.5%;
 }
-.services .service .image {
+.mbody .services .service .image {
 	display: flex;
 }
-.services .service .text {
+.mbody .services .service .text {
     background-color: #FFE6AC;
     padding: inherit;
 }
 /*Stylizing Our Services button*/
-.services .service .text .button {
+.mbody .services .service .text .button {
 	background-color: #222222;
     color: white;
 	padding: 5% 6%;
@@ -231,7 +231,7 @@ p {
 	width: 100%;
 }
 /*Stylizing Vision*/
-.vision {
+.mbody .vision {
     background-image: url(/final-project/images/vision.jpg);
     background-size: cover;
     background-position: center;
@@ -239,14 +239,14 @@ p {
     color: white;
     padding: 5% 2.5% 2% 2.5%;
 }
-.vision .bgvision {
+.mbody .vision .bgvision {
     flex-direction: column;
 }
-.vision .bgvision .particlebox > h3 {
+.mbody .vision .bgvision .particlebox > h3 {
 	padding: 0 0 0.2% 0;
 }
 /*Stylizing Vision button*/
-.vision .bgvision .button {
+.mbody .vision .bgvision .button {
     background-color: rgb(28, 28, 49);
 	width: 28%;
 } 
@@ -259,67 +259,67 @@ p {
 }
 /*Stylizing Contact Us content*/
 /*Stylizing Contact Us form*/
-.services .service > form > label {
+.mbody .services .service > form > label {
     display: block;
 }
-.services .service > form > input, .services .service > form > textarea {
+.mbody .services .service > form > input, .services .service > form > textarea {
     width: 100%;
     border: solid 1px black;
 }
-.services .service > form > textarea {
+.mbody .services .service > form > textarea {
     height: 90px;
     overflow: hidden;
     resize: none;
 }
-.services .service > form > input:last-child {
+.mbody .services .service > form > input:last-child {
     width: 15%;
     color: #aa7b03;
     background-color: #222222;
 }
-.services .service > form > input:last-child:hover {
+.mbody .services .service > form > input:last-child:hover {
     background-color: black;
 	cursor: pointer;
 }
 /*Stylizing Hours of Operation*/
-.services .service .hours {
+.mbody .services .service .hours {
     padding-bottom: 1.5%;
 }
-.services .service .hours .grid {
+.mbody .services .service .hours .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
-.services .service .hours .middlebox .grid .box {
+.mbody .services .service .hours .middlebox .grid .box {
     display: inherit;
     align-content: center;
     border: solid black 1px;
     padding: 4%;
     font-size: 10px;
 }
-.services .service .hours .middlebox .grid .box:nth-child(1), .services .service .hours .middlebox .grid .box:nth-child(2) {
+.mbody .services .service .hours .middlebox .grid .box:nth-child(1), .services .service .hours .middlebox .grid .box:nth-child(2) {
     justify-items: center;
     background-color: #FFE6AC;
 }
-.services .service .hours .middlebox .grid .box:nth-child(2n-1) {
+.mbody .services .service .hours .middlebox .grid .box:nth-child(2n-1) {
     grid-column: span 5;
 }
-.services .service .hours .middlebox .grid .box:nth-child(2n) {
+.mbody .services .service .hours .middlebox .grid .box:nth-child(2n) {
     grid-column: span 3;
  }
  /*Stylizing Contac Us map*/
-.services .service .location {
+.mbody .services .service .location {
     width: 100%;
 }
-.services .service .location .map {
+.mbody .services .service .location .map {
     padding: 1% 0 100% 0;
     position:relative;
 }
-.services .service .location .map > iframe {
+.mbody .services .service .location .map > iframe {
     height:100%;
     width:100%;
     position:absolute;
 }
 /*Stylizing Footer*/
-footer {
+.mbody .mfooter {
 	background-color: #222222;
 	color: #C68D00;
 	display: inherit;
@@ -327,14 +327,431 @@ footer {
 	flex-direction: column;
 	padding: 2% 0 0.5% 0;
 }
-footer .foot {
+.mbody .mfooter .foot {
    display: flex;
    flex-direction: column;
    padding: 1.5% 2%;
 } 
-footer .foot > p {
+.mbody .mfooter .foot > p {
    padding: 1% 0 0 0;
 }
-footer .foot > p > a {
+.mbody .mfooter .foot > p > a {
    text-decoration: underline;
+}
+
+/*Stylizing Desktop*/
+@media screen and (max-width: 740px){
+	.dbody {
+		display: none;
+	}
+  }
+/*Stylizing body and text*/
+.dbody {
+    font-family: "Open Sans", sans-serif;
+    min-width: 760px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/final-project/images/main-banner.jpg);
+    background-size: 760px;
+    background-repeat: no-repeat;
+}
+.dbody > h1 {
+    font-size: 46px;
+    color: white;
+    font-weight: bold;
+    line-height: 69px;
+}
+.dbody > h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.dbody > h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.dbody > h4 {
+    font-size: 11px;
+    font-weight: bold;
+}
+.dbody > p {
+    font-size: 9px;
+    padding: 1% 0 2% 0;
+    line-height: 14px; 
+}
+.dbody .bigbox {
+    display: inherit;
+    justify-content: center;
+}
+.dbody .middlebox {
+    width: 84%;
+    max-width: 1200px;
+    display: inherit;
+}
+.dbody .particlebox {
+    padding-left: 1.5%;
+}
+/*Stylizing menu main box*/
+.dbody .menu {
+    background-color: #222;
+}
+.dbody .menu .bgmenu {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 2% 10%;
+}
+#logo {
+    height: 50px;
+}
+/*Stylizing menu boxes*/
+.dbody .menu .bgmenu .box {
+    max-height: 100%;
+    background-color: #222;
+    color: #C68D00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px
+}
+.dbody .menu .bgmenu .box:nth-child(1) {
+    justify-content: start;
+}
+.dbody .menu .bgmenu .box:nth-child(2) {
+    height: 100%;
+    color: #222;
+}
+.dbody .menu .bgmenu .box .smallbox {
+    display: flex;
+    background-color: #C68D00;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+.dbody .menu .bgmenu .box:nth-child(7) {
+    grid-column: span 2;
+    height: 100%;
+}
+.dbody .menu .bgmenu .box .searchbox {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dbody .menu .bgmenu .box .searchbox > input {
+	padding: 0 0 0 10px;
+	border: 0;
+	width: 80%;
+	height: 100%;
+	font-size: inherit;
+	outline: none;
+}
+.dbody .menu .bgmenu .box .searchbox > button {
+  float: right;
+  height: 100%;
+  width: 20%;
+  background: #222222;
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  border: 2px solid #C68D00;
+  cursor: pointer;
+}
+.dbody .menu .bgmenu .box .searchbox > button > i {
+	color:  #C68D00;
+}
+/*Styliizing welcome div and box*/
+.dbody .bgwelcome {
+    padding: 4% 0;
+}
+.dbody .bgwelcome .welcomebox {
+    background-color: rgba(0, 0, 0, 0.67);
+    padding-top: 8%;
+    padding-bottom: 4%;
+    color: white;
+}
+/*Stylizing button*/
+.dbody .bgwelcome .welcomebox .button {
+    background-color: #C68D00;
+    color: black;
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.dbody .bgwelcome .welcomebox .button:hover {
+    background-color: #aa7b03;
+    cursor: pointer;
+}
+/*Stylizing play button*/
+.dbody .bgwelcome .welcomebox .play-button {
+    margin: 0 0 0 10px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 13px;
+    border-color: transparent transparent transparent #000;
+    opacity: .75; 
+}
+/*Stylizing about us box*/
+.dbody .about { 
+    background-color: #FFE6AC;
+}
+/*Sttylizing about box content*/
+.dbody .about .bgabout {
+    padding: 2.5% 0;
+}
+.dbody .about .bgabout .image {
+    width: 50%;
+    height: 60%;
+}
+.dbody .about .bgabout .text {
+    padding: 0 2.5% 0 1.5%;
+    width: 50%;
+}
+#aboutimg {
+    width: 100%;
+}
+/*Stylizing services*/
+.dbody .services, .team, .contact, .hours {
+    flex-wrap: wrap;
+}
+.dbody .services .title .titlebox {
+    padding-top: 5%;
+    width: 100%;
+}
+/*Stylizing services box*/
+.dbody .services .bgservices{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dbody .services .title .titlebox > h2 {
+    padding-bottom: 1.5%;
+}
+.dbody .services .bgservices .text > h3 {
+    padding: 6% 0 2% 0;
+}
+/*Stylizing services digital and marketing boxes*/
+.dbody .services .bgservices .servicebox {
+    width: 48.5%;
+    padding-bottom: 1.5%;
+}
+.dbody .services .bgservices .servicebox .image {
+    display: flex;
+}
+/*Stylizing images size*/
+#digital { 
+    width: 100%;
+}
+#marketing {
+    width: 100%;
+}
+#video {
+    width: 100%;
+}
+#web {
+    width: 100%;
+}
+#print {
+    width: 100%;
+}
+.dbody .services .bgservices .servicebox .text {
+    width: clac (98.5% - 20px);
+    padding: 0 10px 2% 10px;
+    background-color: #FFE6AC;
+}
+/*Stylizing services box button*/
+.dbody .services .bgservices .servicebox .button {
+    background-color: black;
+    color: white;
+    width: 97.5%;
+    height: 60px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.dbody .services .bgservices .servicebox .button:hover {
+    background-color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.dbody .services .bgservices .servicebox .play-button {
+    margin: 0 0 0 10px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 9px;
+    border-color: transparent transparent transparent white;
+}
+/*Stylizing for the last 3 services boxes*/
+.dbody .services .bgservices .group2 {
+    width: 31.83%;
+}
+/*Stylizing Our Vision*/
+.dbody .vision {
+    background-image: url(/final-project/images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-bottom: 1%;
+}
+.dbody .vision .bgvision {
+    flex-direction: column;
+}
+.dbody .vision .bgvision .particlebox > h3 {
+    padding: 3.5% 0 1% 0;
+}
+.dbody .vision .bgvision .particlebox > p {
+    padding: 1% 0;
+}
+.dbody .vision .bgvision .button {
+    background-color: rgb(28, 28, 49);
+    color: white;
+    width: 20%;
+    height: 60px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.dbody .vision .bgvision .button:hover {
+    background-color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+.dbody .vision .bgvision .play-button {
+    margin: 0 0 0 10px;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 9px;
+    border-color: transparent transparent transparent white;
+}
+/*Stylizing Our Team*/
+.dbody .team .title .titlebox {
+    padding: 5% 0 2% 0;
+}
+.dbody .team .box {
+    flex-wrap: wrap;
+}
+/*Stylizing Our Team content*/
+.dbody .team .box .text {
+    width: 46%;
+    padding: 2%;
+    background-color: #FFE6AC;
+}
+.dbody .team .box .text > h4 {
+    border-bottom: 1.5px solid #C68D00;
+}
+.dbody .team .box .text > p {
+    padding-top: 3%;
+}
+.dbody .team .box .image {
+    width: 50%;
+    display: inherit;
+}
+/*Stylizing Our Team images*/
+#john {
+    width: 100%;
+}
+#bob {
+    width: 100%;
+}
+/*Stylizing Contact Us*/
+/*Stylizing Contac Us tittle*/
+.dbody .contact .title .titlebox {
+    padding: 5% 0 2% 0;
+    width: 100%;
+}
+/*Stylizing Contact Us content*/
+.dbody .contact .middlebox .send {
+    width: 50%;
+}
+/*Stylizing Contact Us form*/
+.dbody .contact .middlebox .send > form > label {
+    display: block;
+}
+.dbody .contact .middlebox .send > form > input, .contact .middlebox .send > form > textarea {
+    width: 94%;
+    border: solid 1px black;
+}
+.dbody .contact .middlebox .send > form > textarea {
+    height: 120px;
+    overflow: hidden;
+    resize: none;
+}
+.dbody .contact .middlebox .send > form > input:last-child {
+    width: 15%;
+    color: #aa7b03;
+    background-color: #222222;
+}
+.dbody .contact .middlebox .send > form > input:last-child:hover {
+    background-color: black;
+}
+/*Stylizing Contac Us map*/
+.dbody .contact .middlebox .location {
+    width: 50%;
+}
+.dbody .contact .middlebox .location .map {
+    padding-bottom:100%;
+    position:relative;
+}
+.dbody .contact .middlebox .location .map > iframe {
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/*Stylizing Hours of Operation*/
+.dbody .hours .title .titlebox {
+    padding: 5% 0 2% 0;
+    width: 100%;
+}
+/*Stylizing Hours of Operation grid*/
+.dbody .hours {
+    padding-bottom: 1.5%;
+}
+.dbody .hours .middlebox .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+}
+.dbody .hours .middlebox .grid .box {
+    display: inherit;
+    align-content: center;
+    border: solid black 1px;
+    padding: 2%;
+    font-size: 10px;
+}
+.dbody .hours .middlebox .grid .box:nth-child(1), .hours .middlebox .grid .box:nth-child(2) {
+    justify-items: center;
+    background-color: #FFE6AC;
+}
+.dbody .hours .middlebox .grid .box:nth-child(2n-1) {
+    grid-column: span 5;
+}
+.dbody .hours .middlebox .grid .box:nth-child(2n) {
+    grid-column: span 3;
+ }
+ /*Stylizing Footer*/
+footer {
+     background-color: #222222;
+     color: #C68D00;
+     display: inherit;
+     flex-wrap: wrap;
+     flex-direction: column;
+     padding: 1% 0 0.5% 0;
+}
+footer .bigbox .middlebox {
+    display: flex;
+    flex-direction: column;
+} 
+footer .bigbox .middlebox > p {
+    padding: 1% 0 0 0;
+}
+footer .bigbox .middlebox > p > a {
+    text-decoration: underline;
 }

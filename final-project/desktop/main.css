@@ -23,7 +23,7 @@ a {
     color: inherit;
 }
 /*Stylizing body and text*/
-body {
+.dbody {
     font-family: "Open Sans", sans-serif;
     width: 760px;
     display: flex;
@@ -32,25 +32,25 @@ body {
     background-size: 760px;
     background-repeat: no-repeat;
 }
-h1 {
+.dbody > h1 {
     font-size: 46px;
     color: white;
     font-weight: bold;
     line-height: 69px;
 }
-h2 {
+.dbody > h2 {
     font-size: 30px;
     font-weight: bold;
 }
-h3 {
+.dbody > h3 {
     font-size: 20px;
     font-weight: bold;
 }
-h4 {
+.dbody > h4 {
     font-size: 11px;
     font-weight: bold;
 }
-p {
+.dbody > p {
     font-size: 9px;
     padding: 1% 0 2% 0;
     line-height: 14px; 
