@@ -153,7 +153,7 @@ p {
 }
 /*Styliizing Home*/
 .mbody .home {
-	background-image: url(images/main-banner.jpg);
+	background-image: url(/final-project/images/main-banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -342,7 +342,7 @@ p {
     width: 100%;
 }
 .mbody .services .service .location .map {
-    padding: 1% 0 100% 0;
+    padding: 1% 0 65% 0;
     position:relative;
 }
 .mbody .services .service .location .map > iframe {
@@ -351,13 +351,13 @@ p {
     position:absolute;
 }
 /*Stylizing Footer*/
-.mbody .mfooter {
-	background-color: #222222;
-	color: #C68D00;
-	display: inherit;
-	flex-wrap: wrap;
-	flex-direction: column;
-	padding: 2% 0 0.5% 0;
+footer {
+    background-color: #222222;
+    color: #C68D00;
+    display: inherit;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2% 0 0.5% 0;
 }
 .mbody .mfooter .foot {
    display: flex;
@@ -386,9 +386,6 @@ p {
 .dbody {
     min-width: 760px;
     flex-direction: column;
-    background-image: url(/final-project/images/main-banner.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 h1 {
     font-size: 46px;
@@ -416,6 +413,11 @@ p {
 .dbody .bigbox {
     display: flex;
     justify-content: center;
+}
+.dbody .bigbox:nth-child(2) {
+    background-image: url(/final-project/images/main-banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .dbody .middlebox {
     width: 84%;
@@ -706,7 +708,7 @@ p {
     position:relative;
 }
 .dbody .contact .middlebox .location .map > iframe {
-    height:100%;
+    height: 100%;
     width:100%;
     position:absolute;
 }
@@ -742,21 +744,16 @@ p {
     grid-column: span 3;
  }
  /*Stylizing Footer*/
-footer {
-     background-color: #222222;
-     color: #C68D00;
-     display: inherit;
-     flex-wrap: wrap;
-     flex-direction: column;
-     padding: 1% 0 0.5% 0;
+.dfooter {
+    padding: 1% 0 0.5% 0;
 }
-footer .bigbox .middlebox {
+.dfooter .bigbox .middlebox {
     display: flex;
     flex-direction: column;
 } 
-footer .bigbox .middlebox > p {
+.dfooter .bigbox .middlebox > p {
     padding: 1% 0 0 0;
 }
-footer .bigbox .middlebox > p > a {
+.dfooter .bigbox .middlebox > p > a {
     text-decoration: underline;
 }

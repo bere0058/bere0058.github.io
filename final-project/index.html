@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="site-title">Guillermo final</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!--Menu Page-->
-<div class="mbody">    
-        <div class="menu">
-            <div class="bgmenu">
-                <div class="box">
+<main class="mbody">    
+        <header class="menu">
+            <ul class="bgmenu">
+                <li class="box">
                     <img id="logo" src="images/logo.png" alt="logo">
-                </div> 
-                <div class="box"><a href="#home">Home</a></div>
-                <div class="box"><a href="#about">About Us</a></div>
-                <div class="box"><a href="#services">Services</a></div>
-                <div class="box"><a href="#team">Team</a></div>
-                <div class="box"><a href="#contact">Contact</a></div>
+                </li> 
+                <li class="box"><a href="#home">Home</a></li>
+                <li class="box"><a href="#about">About Us</a></li>
+                <li class="box"><a href="#services">Services</a></li>
+                <li class="box"><a href="#team">Team</a></li>
+                <li class="box"><a href="#contact">Contact</a></li>
                 <!--Search bar-->
-                <div class="box">
+                <li class="box">
                         <input type="text" placeholder="Search">
                         <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
-            </div>
-        </div>
+                </li>
+            </ul>
+        </header>
     <!--Home Page-->
-        <div id="home" class="home">
+        <section id="home" class="home">
             <div class="bghome">
                 <!--Welcome Box-->
                 <div class="homebox">
@@ -41,9 +41,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     <!--About Page-->
-        <div id="about" class="about">
+        <section id="about" class="about">
             <div class="bgabout">
                 <div class="image"><img id="aboutimg" src="images/about-us.jpg" alt="About"></div>
                 <div class="text">
@@ -52,12 +52,12 @@
                     <p> Nam tortor neque, posuere quis scelerisque et, ultrices non ipsum. Vivamus ultrices iaculis sem id accumsan. Nunc sed ipsum convallis, lacinia velit et, laoreet lorem. Morbi neque erat, auctor et tincidunt sed, finibus eget quam</p>
                 </div>
             </div>   
-        </div>
+        </section>
     <!--Our Services Pages-->
-        <div id="services" class="services">
-        <div class="service"><h2>Our Services</h2></div>
-        <!--Digital Transformation-->
-        <div class="service">
+        <section id="services" class="services">
+            <div class="service"><h2>Our Services</h2></div>
+            <!--Digital Transformation-->
+            <article class="service">
                 <div class="image"><img id="digitalimg" src="images/digital.jpg" alt="digital"></div>
                 <div class="text">
                     <h3>Digital Transformation</h3>
@@ -66,59 +66,59 @@
                         <a href="digital-plans.html">Digital Plans</a> 
                         <div class="play-button"></div>
                     </div>
-            </div>   
-        </div>
-        <!--Marketing-->
-        <div class="service">
-            <div class="image"><img id="marketingimg" src="images/marketing.jpg" alt="marketing"></div>
-        <div class="text">
-            <h3>Marketing</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
-            <div class="button">
-                <a href="digital-plans.html">Marketing Plans</a> 
-                <div class="play-button"></div>
-            </div>   
-        </div>
-        </div>
-        <!--Video Production-->
-        <div class="service">
-            <div class="image"><img id="videoimg" src="images/video.jpg" alt="video"></div>
-        <div class="text">
-            <h3>Video Production</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
-            <div class="button">
-                <a href="video.html">Video Plans</a> 
-                <div class="play-button"></div>
-            </div>   
-        </div>
-        </div>
-        <!--Web Development-->
-        <div class="service">
-            <div class="image"><img id="webimg" src="images/web.jpg" alt="web"></div>
-        <div class="text">
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
-            <div class="button">
-                <a href="video.html">Web Plans</a> 
-                <div class="play-button"></div>
-            </div>   
-        </div>
-        </div>
-        <!--Print-->
-        <div class="service">
-            <div class="image"><img id="printimg" src="images/print.jpg" alt="print"></div>
-        <div class="text">
-            <h3>Print</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
-            <div class="button">
-                <a href="video.html">Print Plans</a> 
-                <div class="play-button"></div>
-            </div>   
-        </div>
-        </div>
-        </div>
+                </div>   
+            </article>
+            <!--Marketing-->
+            <article class="service">
+                <div class="image"><img id="marketingimg" src="images/marketing.jpg" alt="marketing"></div>
+                <div class="text">
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
+                    <div class="button">
+                        <a href="digital-plans.html">Marketing Plans</a> 
+                        <div class="play-button"></div>
+                    </div>   
+                </div>
+            </article>
+            <!--Video Production-->
+            <article class="service">
+                <div class="image"><img id="videoimg" src="images/video.jpg" alt="video"></div>
+                <div class="text">
+                    <h3>Video Production</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
+                    <div class="button">
+                        <a href="video.html">Video Plans</a> 
+                        <div class="play-button"></div>
+                    </div>   
+                </div>
+            </article>
+            <!--Web Development-->
+            <article class="service">
+                <div class="image"><img id="webimg" src="images/web.jpg" alt="web"></div>
+                <div class="text">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
+                    <div class="button">
+                        <a href="video.html">Web Plans</a> 
+                        <div class="play-button"></div>
+                    </div>   
+                </div>
+            </article>
+            <!--Print-->
+            <article class="service">
+                <div class="image"><img id="printimg" src="images/print.jpg" alt="print"></div>
+                <div class="text">
+                    <h3>Print</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
+                    <div class="button">
+                        <a href="video.html">Print Plans</a> 
+                        <div class="play-button"></div>
+                    </div>   
+                </div>
+            </article>
+        </section>
     <!--Vision Box-->
-        <div class="vision">
+        <section class="vision">
             <div class="bgvision">
                 <div class="particlebox">
                     <h3>Our Vision</h3>
@@ -129,33 +129,31 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     <!--Our Team Pages-->
-        <div class="services">
+        <section class="services">
             <div id="team" class="service"><h2>Our Team</h2></div>
             <!--John-->
-            <div class="service">
+            <article class="service">
                 <div class="image"><img id="john" src="images/john.jpg" alt="john"></div>
                 <div class="text">
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
                 </div>
-        
-            </div>
+            </article>
             <!--Bob-->
-            <div class="service">
+            <article class="service">
                 <div class="image"><img id="bob" src="images/bob.jpg" alt="john"></div>
                 <div class="text">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
                 </div>
-        
-            </div>
+            </article>
             <!--Contact Us-->
             <div id="contact" class="service"><h2>Contact Us</h2></div>
-            <div class="service">
+            <section class="service">
                 <!--Form-->
                 <h3>Send us a message</h3>
                 <form action="submit">
@@ -168,7 +166,7 @@
                     <input id="button" type="submit" value="Send">
                 </form>
                 <!--Hours of Operation-->
-                <div class="hours">
+                <article class="hours">
                     <div class="title"><h3>Hours of operation</h3></div>
                     <div class="middlebox">
                         <div class="grid">
@@ -180,45 +178,44 @@
                             <div class="box">Closed</div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <!--Location-->
-                <div class="location">
+                <article class="location">
                     <div class="title"><h3>Location</h3></div>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sColl%C3%A8ge%20algonquin!5e0!3m2!1sfr!2sca!4v1627576346211!5m2!1sfr!2sca" loading="lazy"></iframe>
                     </div>
-                </div>
-            </div>
-        </div>
+                </article>
+            </section>
+        </section>
     <!--Footer-->
-        <div class="mfooter">
+        <footer class="mfooter">
             <div class="foot">
                 <p>&#169;Copyright Three Star Media</p>
                 <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
             </div>
-        </div>
-</div> 
-<div class="dbody">
+        </footer>
+</main> 
+<main class="dbody">
 <!--Home Page-->
     <!--Menu Bar-->
-    <div class="menu bou">
-        <div class="bgmenu">
-            <div class="box"><img id="logo2" src="images/logo.png" alt="logo"></div>
-            <div class="box"><div class="smallbox">Home</div></div>
-            <div class="box"><a href="#about2">About Us</a></div>
-            <div class="box"><a href="#services2">Services</a></div>
-            <div class="box"><a href="#team2">Team</a></div>
-            <div class="box"><a href="#contact2">Contact</a></div>
-            <div class="box">
-                <div class="searchbox">
-                    <input type="text" placeholder="Search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
+    <header class="menu bou">
+        <ul class="bgmenu">
+            <li class="box"><img id="logo2" src="images/logo.png" alt="logo"></li>
+            <li class="box"><div class="smallbox">Home</div></li>
+            <li class="box"><a href="#about2">About Us</a></li>
+            <li class="box"><a href="#services2">Services</a></li>
+            <li class="box"><a href="#team2">Team</a></il>
+            <li class="box"><a href="#contact2">Contact</a></li>
+            <li class="box">
+            <div class="searchbox">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
             </div>
-        </div>
-    </div>
+        </ul>
+    </header>
     <!--Welcome Box-->
-    <div class="bigbox bou">
+    <section class="bigbox">
         <div class="bgwelcome middlebox">
             <div class="welcomebox particlebox">
                 <h1>Welcome to Three Start Media</h1>
@@ -229,9 +226,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--About Us-->
-    <div id="about2" class="about bigbox">
+    <section id="about2" class="about bigbox">
         <div class="bgabout middlebox">
             <div class="image particlebox"><img id="aboutimg2" src="images/about-us.jpg" alt="About"></div>
             <div class="text">
@@ -240,16 +237,16 @@
                 <p> Nam tortor neque, posuere quis scelerisque et, ultrices non ipsum. Vivamus ultrices iaculis sem id accumsan. Nunc sed ipsum convallis, lacinia velit et, laoreet lorem. Morbi neque erat non ipsum.</p>
             </div>
         </div>   
-    </div>
+    </section>
 <!--Our Services-->
-    <div id="services2" class="services bigbox">
+    <section id="services2" class="services bigbox">
         <!--Title-->
         <div class="title middlebox">
             <div class="titlebox particlebox"><h2>Our Services</h2></div>
         </div>
         <!--Services-->
-        <div class="bgservices middlebox">
-            <div class="servicebox particlebox">
+        <section class="bgservices middlebox">
+            <article class="servicebox particlebox">
                 <div class="image"><img id="digitalimg2" src="images/digital.jpg" alt="digital"></div>
                 <div class="text particlebox">
                     <h3>Digital Transformation</h3>
@@ -259,8 +256,8 @@
                         <div class="play-button"></div>
                     </div>
                 </div>
-            </div>
-            <div class="servicebox particlebox">
+            </article>
+            <article class="servicebox particlebox">
                 <div class="image"><img id="marketingimg2" src="images/marketing.jpg" alt="marketing"></div>
                 <div class="text particlebox">
                     <h3>Marketing</h3>
@@ -270,8 +267,8 @@
                         <div class="play-button"></div>
                     </div>
                 </div>
-            </div>
-            <div class="servicebox particlebox group2">
+            </article>
+            <article class="servicebox particlebox group2">
                 <div class="image"><img id="videoimg2" src="images/video.jpg" alt="video"></div>
                 <div class="text particlebox">
                     <h3>Video Production</h3>
@@ -281,8 +278,8 @@
                         <div class="play-button"></div>
                     </div>
                 </div>
-            </div> 
-            <div class="servicebox particlebox group2">
+            </article> 
+            <article class="servicebox particlebox group2">
                 <div class="image"><img id="webimg2" src="images/web.jpg" alt="web"></div>
                 <div class="text particlebox">
                     <h3>Web Development</h3>
@@ -292,8 +289,8 @@
                         <div class="play-button"></div>
                     </div>
                 </div>
-            </div>
-            <div class="servicebox particlebox group2">
+            </article>
+            <article class="servicebox particlebox group2">
                 <div class="image"><img id="printimg2" src="images/print.jpg" alt="print"></div>
                 <div class="text particlebox">
                     <h3>Print</h3>
@@ -303,11 +300,11 @@
                         <div class="play-button"></div>
                     </div>
                 </div>
-            </div>        
-        </div>
-    </div>
+            </article>        
+        </section>
+    </section>
 <!--Our Vision-->
-    <div class="vision bigbox">
+    <section class="vision bigbox">
         <div class="bgvision middlebox">
             <div class="particlebox">
                 <h3>Our Vision</h3>
@@ -318,39 +315,39 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 <!--Our Team-->
-    <div id="team2" class="team bigbox">
+    <section id="team2" class="team bigbox">
         <!--Title-->
         <div class="title middlebox">
             <div class="titlebox particlebox"><h2>Our Team</h2></div>
         </div>
         <!--Team members-->
-        <div class="box middlebox">
+        <section class="box middlebox">
             <div class="image"><img id="john2" src="images/john.jpg" alt="john"></div>
-            <div class="text">
+            <article class="text">
                 <h3>John Deo</h3>
                 <h4>Ceo and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
-            </div>
-            <div class="text">
+            </article>
+            <article class="text">
                 <h3>Rob Rite</h3>
                 <h4>CFO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue dignissim elit. Duis nulla neque, efficitur quis maximus nec, imperdiet quis erat. In vitae tellus est. Sed lectus risus, malesuada sit amet lacus sit amet, maximus viverra lectus.</p>
-            </div>
+            </article>
             <div class="image"><img id="bob2" src="images/bob.jpg" alt="bob"></div>
-        </div>
-    </div>
+        </section>
+    </section>
 <!--Contact Us-->
-    <div id="contact2" class="contact bigbox">
+    <section id="contact2" class="contact bigbox">
         <!--Title-->
         <div class="title middlebox">
             <div class="titlebox particlebox"><h2>Contact Us</h2></div>
         </div>
         <!--Contact box-->
-        <div class="middlebox">
+        <section class="middlebox">
             <!--Form-->
-            <div class="send">
+            <article class="send">
                 <h3>Send us a message</h3>
                 <form action="submit">
                         <label for="form-name">Name</label>
@@ -361,36 +358,36 @@
                         <textarea id="form-field2" class="form-field" name="message" placeholder="Your message for us"></textarea>
                         <input id="button2" type="submit" value="Send">
                 </form>
-            </div>
+            </article>
             <!--Map-->
-            <div class="location">
+            <map class="location">
                 <h3>Location</h3>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676053!2d-75.75712548444633!3d45.3499277790998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sColl%C3%A8ge%20algonquin!5e0!3m2!1sfr!2sca!4v1626820587057!5m2!1sfr!2sca" loading="lazy"></iframe>
                 </div>
-            </div>
-        </div>
-    </div>
+            </map>
+        </section>
+    </section>
 <!--Hours of Operation-->
-    <div class="hours bigbox">
+    <section class="hours bigbox">
         <!--Title-->
         <div class="title middlebox">
             <div class="titlebox particlebox"><h2>Hours of operation</h2></div>
         </div>
         <!--Grid-->
-        <div class="middlebox">
-            <div class="grid">
-                <div class="box">Days</div>
-                <div class="box">Hours</div>
-                <div class="box">Monday-Friday</div>
-                <div class="box">9 AM - 6 AM</div>
-                <div class="box">Saturday-Sunday</div>
-                <div class="box">Closed</div>
-            </div>
-        </div>
-    </div>
+        <section class="middlebox">
+            <ul class="grid">
+                <li class="box">Days</li>
+                <li class="box">Hours</li>
+                <li class="box">Monday-Friday</li>
+                <li class="box">9 AM - 6 AM</li>
+                <li class="box">Saturday-Sunday</li>
+                <li class="box">Closed</li>
+            </ul>
+        </section>
+    </section>
 <!--Footer-->
-    <footer>
+    <footer class="dfooter">
         <div class="bigbox">
             <div class="middlebox">
                 <p>&#169;Copyright Three Star Media</p>
@@ -398,6 +395,6 @@
             </div>
         </div>
     </footer>
-</div> 
+</main> 
 </body>
 </html>
