@@ -57,7 +57,7 @@ p {
 /*Stylizing Buttons*/
 .mbody .button {
 	display: flex;
-	font-size: 0.75em;
+	font-size: 1em;
 	padding: 5% 2%;
 	width: 35%;
 	align-items: center;
@@ -194,6 +194,7 @@ p {
 .mbody .about .bgabout .text {
     width: 100%;
     height: 40%;
+    padding-top: 4%;
 }
 #aboutimg {
     width: 100%;
@@ -217,6 +218,7 @@ p {
 .mbody .services .service .text {
     background-color: #FFE6AC;
     padding: inherit;
+    padding-top: 4%;
 }
 /*Stylizing Our Services button*/
 .mbody .services .service .text .button {
@@ -325,7 +327,7 @@ p {
     align-content: center;
     border: solid black 1px;
     padding: 4%;
-    font-size: 10px;
+    font-size: 13px;
 }
 .mbody .services .service .hours .middlebox .grid .box:nth-child(1), .services .service .hours .middlebox .grid .box:nth-child(2) {
     justify-items: center;
@@ -388,25 +390,25 @@ footer {
     flex-direction: column;
 }
 h1 {
-    font-size: 46px;
+    font-size: 50px;
     color: white;
     font-weight: bold;
     line-height: 69px;
 }
 h2 {
-    font-size: 30px;
+    font-size: 37px;
     font-weight: bold;
 }
 h3 {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
 }
 h4 {
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
 }
 p {
-    font-size: 9px;
+    font-size: 13px;
     padding: 1% 0 2% 0;
     line-height: 14px; 
 }
@@ -731,7 +733,6 @@ p {
     align-content: center;
     border: solid black 1px;
     padding: 2%;
-    font-size: 10px;
 }
 .dbody .hours .middlebox .grid .box:nth-child(1), .hours .middlebox .grid .box:nth-child(2) {
     justify-items: center;
