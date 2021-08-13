@@ -599,7 +599,7 @@ p {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 5px 0 5px 9px;
+    border-width: 7px 0 7px 11px;
     border-color: transparent transparent transparent white;
 }
 /*Stylizing for the last 3 services boxes*/
@@ -633,6 +633,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid #C68D00 1px;
 } 
 .dbody .vision .bgvision .button:hover {
     background-color: rgb(56, 56, 56);
@@ -644,7 +645,7 @@ p {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 5px 0 5px 9px;
+    border-width: 7px 0 7px 11px;
     border-color: transparent transparent transparent white;
 }
 /*Stylizing Our Team*/
@@ -694,9 +695,10 @@ p {
     resize: none;
 }
 .dbody .contact .middlebox .send > form > input:last-child {
-    width: 15%;
+    width: fit-content;
     color: #aa7b03;
     background-color: #222222;
+    font-size: 20px;
 }
 .dbody .contact .middlebox .send > form > input:last-child:hover {
     background-color: black;
