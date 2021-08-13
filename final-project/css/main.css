@@ -74,7 +74,7 @@ p {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 5px 0 5px 8px;
+    border-width: 8px 0 8px 13px;
     opacity: .75; 
 	border-color: transparent transparent transparent white;
 }
@@ -276,7 +276,8 @@ p {
 /*Stylizing Vision button*/
 .mbody .vision .bgvision .button {
     background-color: rgb(28, 28, 49);
-	width: 28%;
+	width: 22%;
+    border: solid 1.5px #C68D00;
 } 
 /*Stylizing Our Team*/	
 #john {
