@@ -307,7 +307,8 @@ p {
     resize: none;
 }
 .mbody .services .service > form > input:last-child {
-    width: 15%;
+    font-size: 20px;
+    width: 10%;
     color: #aa7b03;
     background-color: #222222;
 }
