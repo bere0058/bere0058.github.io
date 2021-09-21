@@ -23,6 +23,13 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+h2 {
+	font-weight: bold;
+	padding: 2% 0 0 0;
+}
+.mbody .sections {
+	background-color: #3be0b726;
+}
 .mbody .navigator {
     background-color: black;
 }
@@ -40,6 +47,11 @@ a {
 }
 .mbody .navigator > ul > li:hover {
 	background-color: rgb(39, 39, 39);
+}
+.mbody .navigator > ul > li:nth-child(2) {
+	border: solid 5px #dbf8f1ee;
+	border-top: 0;
+	border-bottom: 0;
 }
 .mbody .navigator > ul > li > ul:nth-last-child(1)  {
 	display: none;
