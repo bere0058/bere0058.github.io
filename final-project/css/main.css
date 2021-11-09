@@ -26,439 +26,87 @@ a {
 body {
 	font-family: "Open Sans", sans-serif;
 }
-.mbody {
-	min-width: 210px;
-}
 /*Stylizing H titles and Paragraph*/
-h1 {
-	font-size: 2em;
-	font-weight: bold;
-	padding: 1%
-}
-h2 {
-	font-size: 1.5em;
-	font-weight: bold;
-}
-h3 {
-	font-size: 1.1em;
-	font-weight: bold;
-	padding-bottom: 0.6%;
-}
-h4 {
-	font-size: 0.55em;
-	font-weight: bold;
-	border-bottom: #C68D00 solid;
-}
 p {
-	font-size: 0.5em;
-	line-height: 1.5em;
-	padding: 2% 0;
-}
-/*Stylizing Buttons*/
-.mbody .button {
-	display: flex;
-	font-size: 1em;
-	padding: 5% 2%;
-	width: 35%;
-	align-items: center;
-    justify-content: center;
-	color: white;
-}
-.mbody .button:hover {
-	cursor: pointer;
-	background-color: black;
-}
-.mbody .button .play-button {
-	margin: 0 0 0 10px;
-    top: 25%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 0 8px 13px;
-    opacity: .75; 
-	border-color: transparent transparent transparent white;
-}
-/*Stylizing Title boxes*/
-.mbody .title {
-	padding: 3% 0 2% 0;
-}
-/*Stylizing Menu*/
-.mbody .menu {
-	grid-template-rows: repeat(8, 1fr);
-}
-.mbody .menu .bgmenu {
-	border: 10px solid #222222;
-	margin: -1px;
-}
-.mbody .menu .bgmenu .box {
-	width: auto;
-	justify-content: center;
-	align-items: center;
-	display: grid;
-	padding: 2%;
-	color: #C68D00;
-	background-color: #222222;
-	border-collapse: collapse;
-}
-.mbody .menu .bgmenu .box:hover {
-	background-color: black;
-}
-.mbody .menu .bgmenu .box:nth-child(1) {
-	grid-row: span 2;
-	justify-content: start;
-	padding: 2% 4% 0 0;
-}
-#logo {
-	width: 50%;
-}
-#logo2 {
-	width: 50%;
-}
-.mbody .menu .bgmenu .box:nth-child(2) {
-	color: black;
-	background-color: #C68D00;
-}
-.mbody .menu .bgmenu .box:nth-child(2):hover {
-	background-color: #ffe6ac;
-}
-.mbody .menu .bgmenu .box:nth-child(1), .menu .box:nth-child(2) {
-	background-color: #C68D00;
-}
-/*Stylizing the Search Box*/
-.mbody .menu .bgmenu .box:nth-last-child(1) {
-	background-color: #222222;
-	border-top: 0;
-	justify-content: start;
-	display: flex;
-	padding: 0 2% 0 2%;
-	margin-bottom: -1px;
-}
-.mbody .menu .bgmenu .box > input {
-	border: 0;
-	padding: 0;
-	font-size: inherit;
-	outline: none;
-	width: 95%;
-}
-.mbody .menu .bgmenu .box > button {
-  width: 5%;
-  background: #222222;
-  font-size: 14.7px;
-  padding: 0;
-  border: 0.5px solid #C68D00;
-  cursor: pointer;
-}
-.mbody .menu .bgmenu .box > button > i {
-	color:  #C68D00;
-}
-/*Styliizing Home*/
-.mbody .home {
-	background-image: url(/final-project/images/main-banner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	align-content: center;
-}
-.mbody .home .bghome {
-	padding: 9% 0;
-}
-.mbody .home .bghome .homebox {
-	padding: 6% 10% 2% 2%;
-	background-color: rgba(0, 0, 0, 0.67);
-	color: white;
-}
-/*Stylizing Home button*/
-.mbody .home .bghome .homebox .button {
-    background-color: #C68D00;
-    color: black;
-} 
-.mbody .home .bghome .homebox .button .play-button {
-	border-color: transparent transparent transparent #000;
-}
-.mbody .home .bghome .homebox .button:hover {
-    background-color: #aa7b03;
-}
-/*Stylizing About Us*/
-.mbody .about { 
-    background-color: #FFE6AC;
-}
-.mbody .bgabout {
-    padding: 2%;
-    width: 96%;
-    height: 96%;
-}
-.mbody .about .bgabout .image {
-    width: 100%;
-    height: 60%;
-}
-.mbody .about .bgabout .text {
-    width: 100%;
-    height: 40%;
-    padding-top: 4%;
-}
-#aboutimg {
-    width: 100%;
-}
-#aboutimg2 {
-    width: 100%;
-}
-/*Stylizing Our Services*/
-.mbody .services {
-	padding: 1% 0 2%;
-}
-.mbody .services .service {
-	padding: 1% 2%;
-}
-.mbody .services .service:nth-child(1) {
-	padding-top: 3.5%;
-}
-.mbody .services .service .image {
-	display: flex;
-}
-.mbody .services .service .text {
-    background-color: #FFE6AC;
-    padding: inherit;
-    padding-top: 4%;
-}
-/*Stylizing Our Services button*/
-.mbody .services .service .text .button {
-	background-color: #222222;
-    color: white;
-	padding: 5% 6%;
-	width: max-content;
-} 
-/*Stylizing Marketing*/
-#digitalimg { 
-	width: 100%;
-}
-#marketingimg { 
-    width: 100%;
-}	
-#videoimg {
-	width: 100%;
-}
-#webimg {
-	width: 100%;
-}
-#printimg {
-	width: 100%;
-}
-#digitalimg2 { 
-	width: 100%;
-}
-#marketingimg2 { 
-    width: 100%;
-}	
-#videoimg2 {
-	width: 100%;
-}
-#webimg2 {
-	width: 100%;
-}
-#printimg2 {
-	width: 100%;
-}
-/*Stylizing Vision*/
-.mbody .vision {
-    background-image: url(/final-project/images/vision.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 5% 2.5% 2% 2.5%;
-}
-.mbody .vision .bgvision {
-    flex-direction: column;
-}
-.mbody .vision .bgvision .particlebox > h3 {
-	padding: 0 0 0.2% 0;
-}
-/*Stylizing Vision button*/
-.mbody .vision .bgvision .button {
-    background-color: rgb(28, 28, 49);
-	width: 22%;
-    border: solid 1.5px #C68D00;
-} 
-/*Stylizing Our Team*/	
-#john {
-	width: 100%;
-}
-#bob {
-	width: 100%;
-}
-#john2 {
-	width: 100%;
-}
-#bob2 {
-	width: 100%;
-}
-/*Stylizing Contact Us content*/
-/*Stylizing Contact Us form*/
-.mbody .services .service > form > label {
-    display: block;
-}
-.mbody .services .service > form > input, .services .service > form > textarea {
-    width: 100%;
-    border: solid 1px black;
-}
-.mbody .services .service > form > textarea {
-    height: 90px;
-    overflow: hidden;
-    resize: none;
-}
-.mbody .services .service > form > input:last-child {
-    font-size: 20px;
-    width: 10%;
-    color: #aa7b03;
-    background-color: #222222;
-}
-.mbody .services .service > form > input:last-child:hover {
-    background-color: black;
-	cursor: pointer;
-}
-/*Stylizing Hours of Operation*/
-.mbody .services .service .hours {
-    padding-bottom: 1.5%;
-}
-.mbody .services .service .hours .grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-.mbody .services .service .hours .middlebox .grid .box {
-    display: inherit;
-    align-content: center;
-    border: solid black 1px;
-    padding: 4%;
-    font-size: 13px;
-}
-.mbody .services .service .hours .middlebox .grid .box:nth-child(1), .services .service .hours .middlebox .grid .box:nth-child(2) {
-    justify-items: center;
-    background-color: #FFE6AC;
-}
-.mbody .services .service .hours .middlebox .grid .box:nth-child(2n-1) {
-    grid-column: span 5;
-}
-.mbody .services .service .hours .middlebox .grid .box:nth-child(2n) {
-    grid-column: span 3;
- }
- /*Stylizing Contac Us map*/
-.mbody .services .service .location {
-    width: 100%;
-}
-.mbody .services .service .location .map {
-    padding: 1% 0 65% 0;
-    position:relative;
-}
-.mbody .services .service .location .map > iframe {
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-/*Stylizing Footer*/
-footer {
-    background-color: #222222;
-    color: #C68D00;
-    display: inherit;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 2% 0 0.5% 0;
-}
-.mbody .mfooter .foot {
-   display: flex;
-   flex-direction: column;
-   padding: 1.5% 2%;
-} 
-.mbody .mfooter .foot > p {
-   padding: 1% 0 0 0;
-}
-.mbody .mfooter .foot > p > a {
-   text-decoration: underline;
-}
-
-/*Stylizing Desktop*/
-@media screen and (min-width: 759px){
-	.mbody {
-		display: none;
-	}
-  }
-@media screen and (max-width: 760px){
-	.dbody {
-		display: none;
-	}
-}  
-/*Stylizing body and text*/
-.dbody {
-    min-width: 760px;
-    flex-direction: column;
-}
-h1 {
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
-    line-height: 69px;
-}
-h2 {
-    font-size: 37px;
-    font-weight: bold;
-}
-h3 {
-    font-size: 28px;
-    font-weight: bold;
-}
-h4 {
-    font-size: 15px;
-    font-weight: bold;
-}
-p {
-    font-size: 13px;
+    font-size: 1.25vw;
     padding: 1% 0 2% 0;
-    line-height: 14px; 
 }
-.dbody .bigbox {
+h1 {
+    font-size: 8.7vw;
+    color: white;
+    font-weight: bold;
+}
+h2 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2.6vw;
+    font-weight: bold;
+    padding: 2.5% 0;
+}
+h4 {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+/* Style buttons */
+.button {
+    background-color: rgb(28, 28, 49);
+    color: white;
+    width: 100%;
+    height: 60px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+/* Styiling imgs */
+#aboutimg, #marketingimg, #digitalimg, #videoimg, #webimg, #printimg, #john, #bob {
+    width: 100%;
+}
+/* Styling Nav bar */
+.bigbox {
     display: flex;
     justify-content: center;
 }
-.dbody .bigbox:nth-child(2) {
-    background-image: url(/final-project/images/main-banner.jpg);
+.bigbox:nth-child(2) {
+    background-image: url(/bere0058.github.io/final-project/images/main-banner.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.dbody .middlebox {
+.middlebox {
     width: 84%;
-    max-width: 1200px;
-    display: inherit;
+    display: flex;
 }
-.dbody .particlebox {
-    padding-left: 1.5%;
+.particlebox {
+    padding: 0 1.5%;
 }
 /*Stylizing menu main box*/
-.dbody .menu {
+.menu {
     background-color: #222;
 }
-.dbody .menu .bgmenu {
+.menu .bgmenu {
     display: grid;
-    max-width: 1200px;
-    grid-template-columns: repeat(8, 1fr);
-    padding: 2% 10%;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 2% 8%;
+    background-color: #222;
 }
 /*Stylizing menu boxes*/
-.dbody .menu .bgmenu .box {
-    max-height: 100%;
-    background-color: #222;
+.menu .bgmenu .box {
     color: #C68D00;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px
 }
-.dbody .menu .bgmenu .box:nth-child(1) {
+.menu .bgmenu .box:nth-child(1) {
     justify-content: start;
+    width: 60%;
 }
-.dbody .menu .bgmenu .box:nth-child(2) {
+.menu .bgmenu .box:nth-child(2) {
     height: 100%;
     color: #222;
 }
-.dbody .menu .bgmenu .box .smallbox {
+.menu .bgmenu .box .smallbox {
     display: flex;
     background-color: #C68D00;
     width: 100%;
@@ -466,17 +114,16 @@ p {
     align-items: center;
     justify-content: center;
 }
-.dbody .menu .bgmenu .box:nth-child(7) {
-    grid-column: span 2;
+.menu .bgmenu .box:nth-child(7) {
     height: 100%;
 }
-.dbody .menu .bgmenu .box .searchbox {
+.menu .bgmenu .box .searchbox {
     height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.dbody .menu .bgmenu .box .searchbox > input {
+.menu .bgmenu .box .searchbox > input {
 	padding: 0 0 0 10px;
 	border: 0;
 	width: 80%;
@@ -484,7 +131,7 @@ p {
 	font-size: inherit;
 	outline: none;
 }
-.dbody .menu .bgmenu .box .searchbox > button {
+.menu .bgmenu .box .searchbox > button {
   float: right;
   height: 100%;
   width: 20%;
@@ -495,21 +142,21 @@ p {
   border: 2px solid #C68D00;
   cursor: pointer;
 }
-.dbody .menu .bgmenu .box .searchbox > button > i {
+.menu .bgmenu .box .searchbox > button > i {
 	color:  #C68D00;
 }
 /*Styliizing welcome div and box*/
-.dbody .bgwelcome {
+.bgwelcome {
     padding: 4% 0;
 }
-.dbody .bgwelcome .welcomebox {
+.bgwelcome .welcomebox {
     background-color: rgba(0, 0, 0, 0.67);
     padding-top: 8%;
     padding-bottom: 4%;
     color: white;
 }
 /*Stylizing button*/
-.dbody .bgwelcome .welcomebox .button {
+.bgwelcome .welcomebox .button {
     background-color: #C68D00;
     color: black;
     width: 30%;
@@ -518,12 +165,12 @@ p {
     align-items: center;
     justify-content: center;
 } 
-.dbody .bgwelcome .welcomebox .button:hover {
+.bgwelcome .welcomebox .button:hover {
     background-color: #aa7b03;
     cursor: pointer;
 }
 /*Stylizing play button*/
-.dbody .bgwelcome .welcomebox .play-button {
+.bgwelcome .welcomebox .play-button {
     margin: 0 0 0 10px;
     top: 25%;
     width: 0;
@@ -534,54 +181,47 @@ p {
     opacity: .75; 
 }
 /*Stylizing about us box*/
-.dbody .about { 
+.about { 
     background-color: #FFE6AC;
 }
 /*Sttylizing about box content*/
-.dbody .about .bgabout {
-    padding: 2.5% 0;
-}
-.dbody .about .bgabout .image {
-    width: 50%;
-    height: 60%;
-}
-.dbody .about .bgabout .text {
-    padding: 0 2.5% 0 1.5%;
-    width: 50%;
+.about .bgabout > div {
+    padding: 2% 1%;
+    width: 100%;
 }
 /*Stylizing services*/
-.dbody .services, .team, .contact, .hours {
+.services, .team, .contact, .hours {
     flex-wrap: wrap;
 }
-.dbody .services .title .titlebox {
+.services .title .titlebox {
     padding-top: 5%;
     width: 100%;
 }
 /*Stylizing services box*/
-.dbody .services .bgservices{
+.bgservices {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.dbody .services .title .titlebox > h2 {
+.title .titlebox > h2 {
     padding-bottom: 1.5%;
 }
-.dbody .services .bgservices .text > h3 {
+.bgservices .text > h3 {
     padding: 6% 0 2% 0;
 }
 /*Stylizing services digital and marketing boxes*/
-.dbody .services .bgservices .servicebox {
-    width: 48.5%;
+.bgservices > article {
+    width: 47%;
     padding-bottom: 1.5%;
 }
-.dbody .services .bgservices .servicebox .image {
+.bgservices > article > .image {
     display: flex;
 }
-.dbody .services .bgservices .servicebox .text {
+.bgservices > article>  .text {
     padding: 0 10px 2% 10px;
     background-color: #FFE6AC;
 }
 /*Stylizing services box button*/
-.dbody .services .bgservices .servicebox .button {
+.bgservices > article > .button {
     background-color: black;
     color: white;
     width: 97.5%;
@@ -591,11 +231,11 @@ p {
     align-items: center;
     justify-content: center;
 } 
-.dbody .services .bgservices .servicebox .button:hover {
+.bgservices > article > .button:hover {
     background-color: rgb(56, 56, 56);
     cursor: pointer;
 }
-.dbody .services .bgservices .servicebox .play-button {
+.bgservices > article > .play-button {
     margin: 0 0 0 10px;
     top: 25%;
     width: 0;
@@ -605,43 +245,36 @@ p {
     border-color: transparent transparent transparent white;
 }
 /*Stylizing for the last 3 services boxes*/
-.dbody .services .bgservices .group2 {
-    width: 31.83%;
+.bgservices .group2 {
+    width: 30.33%;
 }
 /*Stylizing Our Vision*/
-.dbody .vision {
-    background-image: url(/final-project/images/vision.jpg);
+.vision {
+    background-image: url(/bere0058.github.io/final-project/images/vision.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     padding-bottom: 1%;
 }
-.dbody .vision .bgvision {
+.bgvision {
     flex-direction: column;
 }
-.dbody .vision .bgvision .particlebox > h3 {
+.bgvision .button {
+    width: 20%;
+    border: solid #C68D00 1px;
+}
+.bgvision .particlebox > h3 {
     padding: 3.5% 0 1% 0;
 }
-.dbody .vision .bgvision .particlebox > p {
+.bgvision .particlebox > p {
     padding: 1% 0;
 }
-.dbody .vision .bgvision .button {
-    background-color: rgb(28, 28, 49);
-    color: white;
-    width: 20%;
-    height: 60px;
-    font-size: 0.9em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid #C68D00 1px;
-} 
-.dbody .vision .bgvision .button:hover {
+.bgvision .button:hover {
     background-color: rgb(56, 56, 56);
     cursor: pointer;
 }
-.dbody .vision .bgvision .play-button {
+.bgvision .play-button {
     margin: 0 0 0 10px;
     top: 25%;
     width: 0;
@@ -651,101 +284,110 @@ p {
     border-color: transparent transparent transparent white;
 }
 /*Stylizing Our Team*/
-.dbody .team .title .titlebox {
-    padding: 5% 0 2% 0;
+.team {
+    padding: 0 1.5%;
 }
-.dbody .team .box {
+.team .box {
     flex-wrap: wrap;
 }
+.team .title .titlebox {
+    padding: 5% 0 2% 0;
+}
 /*Stylizing Our Team content*/
-.dbody .team .box .text {
+.team .box > article {
     width: 46%;
     padding: 2%;
     background-color: #FFE6AC;
 }
-.dbody .team .box .text > h4 {
+.team .box > article > h4 {
     border-bottom: 1.5px solid #C68D00;
 }
-.dbody .team .box .text > p {
+.team .box > article > p {
     padding-top: 3%;
 }
-.dbody .team .box .image {
+.team .box > div {
     width: 50%;
     display: inherit;
 }
 /*Stylizing Contact Us*/
 /*Stylizing Contac Us tittle*/
-.dbody .contact .title .titlebox {
+.contact {
+    padding: 0 1.5%;
+}
+.contact .title > h3 {
+    padding: 0 2%;
+}
+.contact .title .titlebox {
     padding: 5% 0 2% 0;
     width: 100%;
 }
 /*Stylizing Contact Us content*/
-.dbody .contact .middlebox .send {
+.contact .middlebox .send {
     width: 50%;
 }
 /*Stylizing Contact Us form*/
-.dbody .contact .middlebox .send > form > label {
+.contact .middlebox .send > form > label {
     display: block;
 }
-.dbody .contact .middlebox .send > form > input, .contact .middlebox .send > form > textarea {
+.contact .middlebox .send > form > input, .contact .middlebox .send > form > textarea {
     width: 94%;
     border: solid 1px black;
 }
-.dbody .contact .middlebox .send > form > textarea {
+.contact .middlebox .send > form > textarea {
     height: 120px;
     overflow: hidden;
     resize: none;
 }
-.dbody .contact .middlebox .send > form > input:last-child {
+.contact .middlebox .send > form > input:last-child {
     width: fit-content;
     color: #aa7b03;
     background-color: #222222;
     font-size: 20px;
 }
-.dbody .contact .middlebox .send > form > input:last-child:hover {
+.contact .middlebox .send > form > input:last-child:hover {
     background-color: black;
 }
 /*Stylizing Contac Us map*/
-.dbody .contact .middlebox .location {
+.location {
     width: 50%;
 }
-.dbody .contact .middlebox .location .map {
+.location .map {
     padding-bottom:100%;
     position:relative;
 }
-.dbody .contact .middlebox .location .map > iframe {
+.location .map > iframe {
     height: 100%;
     width:100%;
     position:absolute;
 }
 /*Stylizing Hours of Operation*/
-.dbody .hours .title .titlebox {
+.hours .title .titlebox {
     padding: 5% 0 2% 0;
     width: 100%;
 }
 /*Stylizing Hours of Operation grid*/
-.dbody .hours {
+.hours {
     padding-bottom: 1.5%;
 }
-.dbody .hours .middlebox .grid {
+.hours .middlebox .grid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(8, 1fr);
 }
-.dbody .hours .middlebox .grid .box {
+.hours .middlebox .grid .box {
     display: inherit;
     align-content: center;
     border: solid black 1px;
     padding: 2%;
 }
-.dbody .hours .middlebox .grid .box:nth-child(1), .hours .middlebox .grid .box:nth-child(2) {
+.hours .middlebox .grid .box:nth-child(1), .hours .middlebox .grid .box:nth-child(2) {
     justify-items: center;
     background-color: #FFE6AC;
 }
-.dbody .hours .middlebox .grid .box:nth-child(2n-1) {
+.hours .middlebox .grid .box:nth-child(2n-1) {
     grid-column: span 5;
 }
-.dbody .hours .middlebox .grid .box:nth-child(2n) {
+.hours .middlebox .grid .box:nth-child(2n) {
     grid-column: span 3;
  }
  /*Stylizing Footer*/
@@ -761,4 +403,73 @@ p {
 }
 .dfooter .bigbox .middlebox > p > a {
     text-decoration: underline;
+}
+/* Mobile Version */
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 2.5vw;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 7.8vw;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    /* Styling Nav var */
+    .menu .bgmenu {
+        display: flex;
+        flex-direction: column;
+        background-color: #C68D00;
+        padding: 0;
+    }
+    .menu .bgmenu .box {
+        background-color: black;
+        width: 100%;
+        padding: 2% 0%;
+    }
+    .menu .bgmenu .box:nth-child(1) {
+        width: 15%;
+        padding-top: 3%;
+        background-color: #C68D00;  
+    }
+    .menu .bgmenu .box:nth-child(2) {
+        background-color: #C68D00;
+    }
+    /* Styling Banner and  About*/
+    .middlebox {
+        width: 100%;
+        flex-direction: column;
+    }
+    .about .bgabout > div {
+        width: auto;
+    }
+    /* Styling Our Services */
+    .bgservices > article, .bgservices > .group2 {
+        width: 97%;
+        flex-direction: column;
+    }
+    /* Styling Our Team */
+    .team .box > article {
+        width: 96%;
+    }
+    .team .box > div {
+        width: 100%;
+    }
+    /* Styling Contact */
+    .contact .middlebox .send {
+    width: 100%;
+    }
+    /* Stylizing Contact form */
+    label, input, textarea {
+        margin: 1% 0;
+        font-size: 2.5vw;
+        width: 100%;
+    }
+    /* Stylizing Contact map */
+    .location {
+        width: 100%;
+    }
 }
