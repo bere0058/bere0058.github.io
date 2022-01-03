@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    list-style-type: none;
 }
 a {
 	text-decoration: none;
@@ -30,6 +31,7 @@ body {
 p {
     font-size: 1.25vw;
     padding: 1% 0 2% 0;
+    text-align: justify;
 }
 h1 {
     font-size: 8.7vw;
@@ -54,7 +56,7 @@ h4 {
     background-color: rgb(28, 28, 49);
     color: white;
     width: 100%;
-    height: 60px;
+    height: 7vw;
     font-size: 0.9em;
     display: flex;
     align-items: center;
@@ -70,7 +72,7 @@ h4 {
     justify-content: center;
 }
 .bigbox:nth-child(2) {
-    background-image: url(/bere0058.github.io/final-project/images/main-banner.jpg);
+    background-image: url(/bere0058.github.io/final-project/images/main-banner.JPG);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -160,10 +162,7 @@ h4 {
     background-color: #C68D00;
     color: black;
     width: 30%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 10vw;
 } 
 .bgwelcome .welcomebox .button:hover {
     background-color: #aa7b03;
@@ -186,8 +185,11 @@ h4 {
 }
 /*Sttylizing about box content*/
 .about .bgabout > div {
-    padding: 2% 1%;
+    padding: 2% 0;
     width: 100%;
+}
+.about .bgabout .text {
+    padding: 0 3vw;
 }
 /*Stylizing services*/
 .services, .team, .contact, .hours {
@@ -217,7 +219,7 @@ h4 {
     display: flex;
 }
 .bgservices > article>  .text {
-    padding: 0 10px 2% 10px;
+    padding: 0 3vw 2% 3vw;
     background-color: #FFE6AC;
 }
 /*Stylizing services box button*/
@@ -268,7 +270,7 @@ h4 {
     padding: 3.5% 0 1% 0;
 }
 .bgvision .particlebox > p {
-    padding: 1% 0;
+    padding: 3vw 0;
 }
 .bgvision .button:hover {
     background-color: rgb(56, 56, 56);
@@ -296,7 +298,7 @@ h4 {
 /*Stylizing Our Team content*/
 .team .box > article {
     width: 46%;
-    padding: 2%;
+    padding: 2% 3vw;
     background-color: #FFE6AC;
 }
 .team .box > article > h4 {
@@ -366,12 +368,15 @@ h4 {
     width: 100%;
 }
 /*Stylizing Hours of Operation grid*/
-.hours {
-    padding-bottom: 1.5%;
-}
-.hours .middlebox .grid {
+.grid {
     display: grid;
     width: 100%;
+}
+.hours {
+    padding-bottom: 1.5%;
+    width: 100%;
+}
+.hours .middlebox .grid {
     grid-template-columns: repeat(8, 1fr);
 }
 .hours .middlebox .grid .box {
@@ -391,17 +396,19 @@ h4 {
     grid-column: span 3;
  }
  /*Stylizing Footer*/
-.dfooter {
-    padding: 1% 0 0.5% 0;
+footer {
+    padding: 0.5% 0 1% 0;
+    background-color: black;
+    color: #C68D00;
 }
-.dfooter .bigbox .middlebox {
+footer .bigbox .middlebox {
     display: flex;
     flex-direction: column;
 } 
-.dfooter .bigbox .middlebox > p {
+footer .bigbox .middlebox > p {
     padding: 1% 0 0 0;
 }
-.dfooter .bigbox .middlebox > p > a {
+footer .bigbox .middlebox > p > a {
     text-decoration: underline;
 }
 /* Mobile Version */
@@ -411,12 +418,19 @@ h4 {
     }
     h1 {
         font-size: 10vw;
+        text-align: center;
     }
     h2 {
         font-size: 7.8vw;
+        text-align: center;
     }
     h3 {
         font-size: 5vw;
+        text-align: center;
+    }
+    h4 {
+        font-size: 3vw;
+        text-align: center;
     }
     /* Styling Nav var */
     .menu .bgmenu {
@@ -438,11 +452,18 @@ h4 {
     .menu .bgmenu .box:nth-child(2) {
         background-color: #C68D00;
     }
-    /* Styling Banner and  About*/
+    .menu .bgmenu .box .searchbox {
+        width: 80%;
+    }
+    /* Styling Banner*/
     .middlebox {
         width: 100%;
         flex-direction: column;
     }
+    .bgwelcome .welcomebox .button {
+        margin: auto;
+    }
+    /* Styling About */
     .about .bgabout > div {
         width: auto;
     }
@@ -451,15 +472,22 @@ h4 {
         width: 97%;
         flex-direction: column;
     }
+    /* Styling Vision */
+    .bgvision .button {
+        margin: auto;
+    }
     /* Styling Our Team */
     .team .box > article {
-        width: 96%;
+        width: calc(100% - 6vw);
     }
     .team .box > div {
         width: 100%;
     }
     /* Styling Contact */
     .contact .middlebox .send {
+    width: 100%;
+    }
+    .contact .middlebox .send > form > input, .contact .middlebox .send > form > textarea {
     width: 100%;
     }
     /* Stylizing Contact form */
@@ -470,6 +498,24 @@ h4 {
     }
     /* Stylizing Contact map */
     .location {
+        width: 100%;
+    }
+    /* Stylizing Hours */
+    .hours .middlebox .grid {
+        font-size: 2.5vw;
+    }
+    /* Styling Footer */
+    footer .bigbox .middlebox > p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 442px) {
+    /* Styling Button Banner */
+    .button>a {
+        font-size: 3vw;
+    }
+    /* Styling Vision */
+    .bgvision .button {
         width: 100%;
     }
 }
