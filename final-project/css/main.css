@@ -29,7 +29,7 @@ body {
 }
 /*Stylizing H titles and Paragraph*/
 p {
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     padding: 1% 0 2% 0;
     text-align: justify;
 }
@@ -48,7 +48,7 @@ h3 {
     padding: 2.5% 0;
 }
 h4 {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: bold;
 }
 /* Style buttons */
@@ -72,7 +72,7 @@ h4 {
     justify-content: center;
 }
 .bigbox:nth-child(2) {
-    background-image: url(/bere0058.github.io/final-project/images/main-banner.JPG);
+    background-image: url(/bere0058.github.io/final-project/images/main-banner.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -158,6 +158,9 @@ h4 {
     color: white;
 }
 /*Stylizing button*/
+.button > a {
+    font-size: 1.5vw;
+}
 .bgwelcome .welcomebox .button {
     background-color: #C68D00;
     color: black;
@@ -189,7 +192,7 @@ h4 {
     width: 100%;
 }
 .about .bgabout .text {
-    padding: 0 3vw;
+    padding: 2% 3vw;
 }
 /*Stylizing services*/
 .services, .team, .contact, .hours {
@@ -297,7 +300,7 @@ h4 {
 }
 /*Stylizing Our Team content*/
 .team .box > article {
-    width: 46%;
+    width: calc(50% - 6vw);
     padding: 2% 3vw;
     background-color: #FFE6AC;
 }
@@ -462,6 +465,9 @@ footer .bigbox .middlebox > p > a {
     }
     .bgwelcome .welcomebox .button {
         margin: auto;
+    }
+    .button > a {
+        font-size: 2.5vw;
     }
     /* Styling About */
     .about .bgabout > div {
