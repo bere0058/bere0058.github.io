@@ -72,7 +72,7 @@ h4 {
     justify-content: center;
 }
 .bigbox:nth-child(2) {
-    background-image: url(/bere0058.github.io/final-project/images/main-banner.jpg);
+    background-image: url(/bere0058.github.io/final-project/images/main-banner.JPG);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -255,7 +255,7 @@ h4 {
 }
 /*Stylizing Our Vision*/
 .vision {
-    background-image: url(/bere0058.github.io/final-project/images/vision.jpg);
+    background-image: url(/bere0058.github.io/final-project/images/vision.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
