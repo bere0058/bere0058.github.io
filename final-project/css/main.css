@@ -486,6 +486,9 @@ footer .bigbox .middlebox > p > a {
     .team .box > article {
         width: calc(100% - 6vw);
     }
+    .team .box > article:nth-child(3) {
+        order: 2;
+    }
     .team .box > div {
         width: 100%;
     }
